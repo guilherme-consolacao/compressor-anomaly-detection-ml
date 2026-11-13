@@ -1,0 +1,1440 @@
+[
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "groups": 1,
+    "k": 2,
+    "leave_group_out_ari": [],
+    "method": "KMeans",
+    "n": 144,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "kaist:load:2Nm"
+        ],
+        "feature_means": {
+          "kurtosis": -0.06455664685208086,
+          "range_over_std": 8.250205173333875,
+          "skewness": -0.03269486731244941
+        },
+        "n": 120,
+        "reference_anomalies": 24
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "kaist:load:2Nm"
+        ],
+        "feature_means": {
+          "kurtosis": 1.9075104369895215,
+          "range_over_std": 9.053738085714786,
+          "skewness": 0.24815458740942561
+        },
+        "n": 24,
+        "reference_anomalies": 24
+      }
+    ],
+    "reference_ari_descriptive_only": 0.41345365053322397,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -0.01879506775873011,
+      -0.13390845955053443,
+      8.07957814772501
+    ],
+    "scaler_scale": [
+      0.05505386532866717,
+      0.5848290801017182,
+      0.8030786392657756
+    ],
+    "seed": 2026,
+    "silhouette": 0.7689967388887756,
+    "sizes": {
+      "0": 120,
+      "1": 24
+    },
+    "source": "kaist",
+    "stability_status": "not estimable with one training group"
+  },
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "groups": 1,
+    "k": 3,
+    "leave_group_out_ari": [],
+    "method": "KMeans",
+    "n": 144,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "kaist:load:2Nm"
+        ],
+        "feature_means": {
+          "kurtosis": -0.06455664685208086,
+          "range_over_std": 8.250205173333875,
+          "skewness": -0.03269486731244941
+        },
+        "n": 120,
+        "reference_anomalies": 24
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "kaist:load:2Nm"
+        ],
+        "feature_means": {
+          "kurtosis": 2.7259412958286524,
+          "range_over_std": 10.475825879609276,
+          "skewness": 0.20365104097275966
+        },
+        "n": 12,
+        "reference_anomalies": 12
+      },
+      {
+        "cluster": "2",
+        "dependency_groups": [
+          "kaist:load:2Nm"
+        ],
+        "feature_means": {
+          "kurtosis": 1.0890795781503915,
+          "range_over_std": 7.6316502918202955,
+          "skewness": 0.29265813384609146
+        },
+        "n": 12,
+        "reference_anomalies": 12
+      }
+    ],
+    "reference_ari_descriptive_only": 0.38601512983030056,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -0.01879506775873011,
+      -0.13390845955053443,
+      8.07957814772501
+    ],
+    "scaler_scale": [
+      0.05505386532866717,
+      0.5848290801017182,
+      0.8030786392657756
+    ],
+    "seed": 2026,
+    "silhouette": 0.8125884040766879,
+    "sizes": {
+      "0": 120,
+      "1": 12,
+      "2": 12
+    },
+    "source": "kaist",
+    "stability_status": "not estimable with one training group"
+  },
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "groups": 1,
+    "k": 4,
+    "leave_group_out_ari": [],
+    "method": "KMeans",
+    "n": 144,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "kaist:load:2Nm"
+        ],
+        "feature_means": {
+          "kurtosis": -0.20378976569804053,
+          "range_over_std": 7.9789310241669265,
+          "skewness": -0.017753935772632474
+        },
+        "n": 96,
+        "reference_anomalies": 0
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "kaist:load:2Nm"
+        ],
+        "feature_means": {
+          "kurtosis": 2.7259412958286524,
+          "range_over_std": 10.475825879609276,
+          "skewness": 0.20365104097275966
+        },
+        "n": 12,
+        "reference_anomalies": 12
+      },
+      {
+        "cluster": "2",
+        "dependency_groups": [
+          "kaist:load:2Nm"
+        ],
+        "feature_means": {
+          "kurtosis": 1.0890795781503915,
+          "range_over_std": 7.6316502918202955,
+          "skewness": 0.29265813384609146
+        },
+        "n": 12,
+        "reference_anomalies": 12
+      },
+      {
+        "cluster": "3",
+        "dependency_groups": [
+          "kaist:load:2Nm"
+        ],
+        "feature_means": {
+          "kurtosis": 0.4923758285317579,
+          "range_over_std": 9.335301770001662,
+          "skewness": -0.09245859347171714
+        },
+        "n": 24,
+        "reference_anomalies": 24
+      }
+    ],
+    "reference_ari_descriptive_only": 0.860650945234847,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -0.01879506775873011,
+      -0.13390845955053443,
+      8.07957814772501
+    ],
+    "scaler_scale": [
+      0.05505386532866717,
+      0.5848290801017182,
+      0.8030786392657756
+    ],
+    "seed": 2026,
+    "silhouette": 0.7374966668747089,
+    "sizes": {
+      "0": 96,
+      "1": 12,
+      "2": 12,
+      "3": 24
+    },
+    "source": "kaist",
+    "stability_status": "not estimable with one training group"
+  },
+  {
+    "contamination": 0.01,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "flagged": 2,
+    "flags_are_fault_labels": false,
+    "groups": 1,
+    "method": "IsolationForest",
+    "n": 144,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -0.01879506775873011,
+      -0.13390845955053443,
+      8.07957814772501
+    ],
+    "scaler_scale": [
+      0.05505386532866717,
+      0.5848290801017182,
+      0.8030786392657756
+    ],
+    "seed": 2026,
+    "source": "kaist"
+  },
+  {
+    "contamination": 0.05,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "flagged": 8,
+    "flags_are_fault_labels": false,
+    "groups": 1,
+    "method": "IsolationForest",
+    "n": 144,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -0.01879506775873011,
+      -0.13390845955053443,
+      8.07957814772501
+    ],
+    "scaler_scale": [
+      0.05505386532866717,
+      0.5848290801017182,
+      0.8030786392657756
+    ],
+    "seed": 2026,
+    "source": "kaist"
+  },
+  {
+    "contamination": 0.1,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "flagged": 15,
+    "flags_are_fault_labels": false,
+    "groups": 1,
+    "method": "IsolationForest",
+    "n": 144,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -0.01879506775873011,
+      -0.13390845955053443,
+      8.07957814772501
+    ],
+    "scaler_scale": [
+      0.05505386532866717,
+      0.5848290801017182,
+      0.8030786392657756
+    ],
+    "seed": 2026,
+    "source": "kaist"
+  },
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "compressor_rms_x",
+      "compressor_rms_y",
+      "compressor_rms_z",
+      "T_com_in_C",
+      "T_com_out_C"
+    ],
+    "groups": 6,
+    "k": 2,
+    "leave_group_out_ari": [
+      0.05097611398996092,
+      0.9595160835962758,
+      0.9648572953656754,
+      0.3373616100108237,
+      0.9297620095196192,
+      1.0
+    ],
+    "method": "KMeans",
+    "n": 133,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "rwth_r290:session:M02",
+          "rwth_r290:session:M04",
+          "rwth_r290:session:M05",
+          "rwth_r290:session:M07",
+          "rwth_r290:session:M08"
+        ],
+        "feature_means": {
+          "T_com_in_C": 2.9793978579310334,
+          "T_com_out_C": 78.6637873563218,
+          "compressor_rms_x": 1.2125990459770117,
+          "compressor_rms_y": 3.0688365517241376,
+          "compressor_rms_z": 1.226283724137931
+        },
+        "n": 87,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "rwth_r290:session:M01",
+          "rwth_r290:session:M02",
+          "rwth_r290:session:M04"
+        ],
+        "feature_means": {
+          "T_com_in_C": 7.194179130434782,
+          "T_com_out_C": 56.355223913043496,
+          "compressor_rms_x": 0.6965361086956522,
+          "compressor_rms_y": 1.7948854347826086,
+          "compressor_rms_z": 0.5993428913043478
+        },
+        "n": 46,
+        "reference_anomalies": null
+      }
+    ],
+    "reference_ari_descriptive_only": null,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.873815,
+      2.7638,
+      0.719252,
+      4.9406,
+      64.8527
+    ],
+    "scaler_scale": [
+      0.668247,
+      1.4268699999999999,
+      0.8080449999999999,
+      5.04072,
+      32.498099999999994
+    ],
+    "seed": 2026,
+    "silhouette": 0.4320116238710319,
+    "sizes": {
+      "0": 87,
+      "1": 46
+    },
+    "source": "rwth_r290",
+    "stability_status": "leave-group-out measured"
+  },
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "compressor_rms_x",
+      "compressor_rms_y",
+      "compressor_rms_z",
+      "T_com_in_C",
+      "T_com_out_C"
+    ],
+    "groups": 6,
+    "k": 3,
+    "leave_group_out_ari": [
+      0.29128966530468164,
+      0.32917788883709903,
+      0.6070716086638519,
+      0.4726479287362066,
+      0.6267692077327154,
+      0.9259884552384816
+    ],
+    "method": "KMeans",
+    "n": 133,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "rwth_r290:session:M02",
+          "rwth_r290:session:M04",
+          "rwth_r290:session:M05",
+          "rwth_r290:session:M07",
+          "rwth_r290:session:M08"
+        ],
+        "feature_means": {
+          "T_com_in_C": 5.425049999999998,
+          "T_com_out_C": 77.17518490566036,
+          "compressor_rms_x": 1.1307071698113205,
+          "compressor_rms_y": 3.1536960377358496,
+          "compressor_rms_z": 1.0968201698113205
+        },
+        "n": 53,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "rwth_r290:session:M05",
+          "rwth_r290:session:M07"
+        ],
+        "feature_means": {
+          "T_com_in_C": -0.6351176102857145,
+          "T_com_out_C": 80.89432571428571,
+          "compressor_rms_x": 1.3255488571428569,
+          "compressor_rms_y": 2.9311774285714285,
+          "compressor_rms_z": 1.4066657142857146
+        },
+        "n": 35,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "2",
+        "dependency_groups": [
+          "rwth_r290:session:M01",
+          "rwth_r290:session:M02"
+        ],
+        "feature_means": {
+          "T_com_in_C": 7.218696,
+          "T_com_out_C": 55.8778577777778,
+          "compressor_rms_x": 0.6936686222222221,
+          "compressor_rms_y": 1.7736979999999998,
+          "compressor_rms_z": 0.5975930666666667
+        },
+        "n": 45,
+        "reference_anomalies": null
+      }
+    ],
+    "reference_ari_descriptive_only": null,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.873815,
+      2.7638,
+      0.719252,
+      4.9406,
+      64.8527
+    ],
+    "scaler_scale": [
+      0.668247,
+      1.4268699999999999,
+      0.8080449999999999,
+      5.04072,
+      32.498099999999994
+    ],
+    "seed": 2026,
+    "silhouette": 0.44908171392011514,
+    "sizes": {
+      "0": 53,
+      "1": 35,
+      "2": 45
+    },
+    "source": "rwth_r290",
+    "stability_status": "leave-group-out measured"
+  },
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "compressor_rms_x",
+      "compressor_rms_y",
+      "compressor_rms_z",
+      "T_com_in_C",
+      "T_com_out_C"
+    ],
+    "groups": 6,
+    "k": 4,
+    "leave_group_out_ari": [
+      0.5770210552280105,
+      0.5579504605902301,
+      0.756837507847146,
+      0.54922006258973,
+      0.5108832565948682,
+      0.7752195559427077
+    ],
+    "method": "KMeans",
+    "n": 133,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "rwth_r290:session:M05",
+          "rwth_r290:session:M07"
+        ],
+        "feature_means": {
+          "T_com_in_C": -0.6351176102857145,
+          "T_com_out_C": 80.89432571428571,
+          "compressor_rms_x": 1.3255488571428569,
+          "compressor_rms_y": 2.9311774285714285,
+          "compressor_rms_z": 1.4066657142857146
+        },
+        "n": 35,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "rwth_r290:session:M01",
+          "rwth_r290:session:M02"
+        ],
+        "feature_means": {
+          "T_com_in_C": 7.218696,
+          "T_com_out_C": 55.8778577777778,
+          "compressor_rms_x": 0.6936686222222221,
+          "compressor_rms_y": 1.7736979999999998,
+          "compressor_rms_z": 0.5975930666666667
+        },
+        "n": 45,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "2",
+        "dependency_groups": [
+          "rwth_r290:session:M02",
+          "rwth_r290:session:M04",
+          "rwth_r290:session:M07",
+          "rwth_r290:session:M08"
+        ],
+        "feature_means": {
+          "T_com_in_C": 5.02171,
+          "T_com_out_C": 86.1996037037037,
+          "compressor_rms_x": 0.885265925925926,
+          "compressor_rms_y": 3.4919092592592595,
+          "compressor_rms_z": 0.770269222222222
+        },
+        "n": 27,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "3",
+        "dependency_groups": [
+          "rwth_r290:session:M05",
+          "rwth_r290:session:M08"
+        ],
+        "feature_means": {
+          "T_com_in_C": 5.843903076923078,
+          "T_com_out_C": 67.80367307692308,
+          "compressor_rms_x": 1.3855884615384613,
+          "compressor_rms_y": 2.802474615384616,
+          "compressor_rms_z": 1.435930769230769
+        },
+        "n": 26,
+        "reference_anomalies": null
+      }
+    ],
+    "reference_ari_descriptive_only": null,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.873815,
+      2.7638,
+      0.719252,
+      4.9406,
+      64.8527
+    ],
+    "scaler_scale": [
+      0.668247,
+      1.4268699999999999,
+      0.8080449999999999,
+      5.04072,
+      32.498099999999994
+    ],
+    "seed": 2026,
+    "silhouette": 0.5364314299373272,
+    "sizes": {
+      "0": 35,
+      "1": 45,
+      "2": 27,
+      "3": 26
+    },
+    "source": "rwth_r290",
+    "stability_status": "leave-group-out measured"
+  },
+  {
+    "contamination": 0.01,
+    "features": [
+      "compressor_rms_x",
+      "compressor_rms_y",
+      "compressor_rms_z",
+      "T_com_in_C",
+      "T_com_out_C"
+    ],
+    "flagged": 2,
+    "flags_are_fault_labels": false,
+    "groups": 6,
+    "method": "IsolationForest",
+    "n": 133,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.873815,
+      2.7638,
+      0.719252,
+      4.9406,
+      64.8527
+    ],
+    "scaler_scale": [
+      0.668247,
+      1.4268699999999999,
+      0.8080449999999999,
+      5.04072,
+      32.498099999999994
+    ],
+    "seed": 2026,
+    "source": "rwth_r290"
+  },
+  {
+    "contamination": 0.05,
+    "features": [
+      "compressor_rms_x",
+      "compressor_rms_y",
+      "compressor_rms_z",
+      "T_com_in_C",
+      "T_com_out_C"
+    ],
+    "flagged": 7,
+    "flags_are_fault_labels": false,
+    "groups": 6,
+    "method": "IsolationForest",
+    "n": 133,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.873815,
+      2.7638,
+      0.719252,
+      4.9406,
+      64.8527
+    ],
+    "scaler_scale": [
+      0.668247,
+      1.4268699999999999,
+      0.8080449999999999,
+      5.04072,
+      32.498099999999994
+    ],
+    "seed": 2026,
+    "source": "rwth_r290"
+  },
+  {
+    "contamination": 0.1,
+    "features": [
+      "compressor_rms_x",
+      "compressor_rms_y",
+      "compressor_rms_z",
+      "T_com_in_C",
+      "T_com_out_C"
+    ],
+    "flagged": 14,
+    "flags_are_fault_labels": false,
+    "groups": 6,
+    "method": "IsolationForest",
+    "n": 133,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.873815,
+      2.7638,
+      0.719252,
+      4.9406,
+      64.8527
+    ],
+    "scaler_scale": [
+      0.668247,
+      1.4268699999999999,
+      0.8080449999999999,
+      5.04072,
+      32.498099999999994
+    ],
+    "seed": 2026,
+    "source": "rwth_r290"
+  },
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "groups": 5,
+    "k": 2,
+    "leave_group_out_ari": [
+      0.8166542085039245,
+      1.0,
+      0.9530868052524802,
+      0.9457356760677883,
+      0.030020472110496497
+    ],
+    "method": "KMeans",
+    "n": 511,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "smart_pdm:week-block:2022-13",
+          "smart_pdm:week-block:2022-14",
+          "smart_pdm:week-block:2022-23"
+        ],
+        "feature_means": {
+          "kurtosis": 4526.987558911111,
+          "range_over_std": 184.4188960689016,
+          "skewness": 27.49820778622222
+        },
+        "n": 45,
+        "reference_anomalies": 1
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "smart_pdm:week-block:2022-09",
+          "smart_pdm:week-block:2022-11",
+          "smart_pdm:week-block:2022-13",
+          "smart_pdm:week-block:2022-14",
+          "smart_pdm:week-block:2022-23"
+        ],
+        "feature_means": {
+          "kurtosis": 676.7948987996738,
+          "range_over_std": 101.46777041787851,
+          "skewness": 0.9290581423862662
+        },
+        "n": 466,
+        "reference_anomalies": 11
+      }
+    ],
+    "reference_ari_descriptive_only": -0.001969548637354736,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.815985444,
+      441.7806213,
+      105.41129582117536
+    ],
+    "scaler_scale": [
+      5.674248237,
+      1193.45365665,
+      67.82177814476296
+    ],
+    "seed": 2026,
+    "silhouette": 0.7070458839268879,
+    "sizes": {
+      "0": 45,
+      "1": 466
+    },
+    "source": "smart_pdm",
+    "stability_status": "leave-group-out measured"
+  },
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "groups": 5,
+    "k": 3,
+    "leave_group_out_ari": [
+      0.3060193565869174,
+      0.883225013630179,
+      0.22406774875609842,
+      0.21245677186572534,
+      0.4951742207788681
+    ],
+    "method": "KMeans",
+    "n": 511,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "smart_pdm:week-block:2022-09",
+          "smart_pdm:week-block:2022-11",
+          "smart_pdm:week-block:2022-13",
+          "smart_pdm:week-block:2022-14",
+          "smart_pdm:week-block:2022-23"
+        ],
+        "feature_means": {
+          "kurtosis": 1709.4540465893444,
+          "range_over_std": 143.22266676365683,
+          "skewness": 10.090842932836066
+        },
+        "n": 122,
+        "reference_anomalies": 1
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "smart_pdm:week-block:2022-09",
+          "smart_pdm:week-block:2022-11",
+          "smart_pdm:week-block:2022-13",
+          "smart_pdm:week-block:2022-14",
+          "smart_pdm:week-block:2022-23"
+        ],
+        "feature_means": {
+          "kurtosis": 459.74847443647,
+          "range_over_std": 91.59699542569756,
+          "skewness": -1.0190818696284152
+        },
+        "n": 366,
+        "reference_anomalies": 11
+      },
+      {
+        "cluster": "2",
+        "dependency_groups": [
+          "smart_pdm:week-block:2022-14",
+          "smart_pdm:week-block:2022-23"
+        ],
+        "feature_means": {
+          "kurtosis": 6186.066420173913,
+          "range_over_std": 199.35502899393597,
+          "skewness": 35.3157204873913
+        },
+        "n": 23,
+        "reference_anomalies": 0
+      }
+    ],
+    "reference_ari_descriptive_only": -0.021354678213409823,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.815985444,
+      441.7806213,
+      105.41129582117536
+    ],
+    "scaler_scale": [
+      5.674248237,
+      1193.45365665,
+      67.82177814476296
+    ],
+    "seed": 2026,
+    "silhouette": 0.505210063917833,
+    "sizes": {
+      "0": 122,
+      "1": 366,
+      "2": 23
+    },
+    "source": "smart_pdm",
+    "stability_status": "leave-group-out measured"
+  },
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "groups": 5,
+    "k": 4,
+    "leave_group_out_ari": [
+      0.9555423367756292,
+      0.9877326530910102,
+      0.8423027381551478,
+      0.9118455360849572,
+      0.35182685248528994
+    ],
+    "method": "KMeans",
+    "n": 511,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "smart_pdm:week-block:2022-09",
+          "smart_pdm:week-block:2022-11",
+          "smart_pdm:week-block:2022-13",
+          "smart_pdm:week-block:2022-14",
+          "smart_pdm:week-block:2022-23"
+        ],
+        "feature_means": {
+          "kurtosis": 1852.435291379592,
+          "range_over_std": 146.88686653251878,
+          "skewness": 11.615936561224489
+        },
+        "n": 98,
+        "reference_anomalies": 1
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "smart_pdm:week-block:2022-13",
+          "smart_pdm:week-block:2022-14",
+          "smart_pdm:week-block:2022-23"
+        ],
+        "feature_means": {
+          "kurtosis": 2277.920720359375,
+          "range_over_std": 168.02980795735098,
+          "skewness": -14.846692716125
+        },
+        "n": 32,
+        "reference_anomalies": 0
+      },
+      {
+        "cluster": "2",
+        "dependency_groups": [
+          "smart_pdm:week-block:2022-14",
+          "smart_pdm:week-block:2022-23"
+        ],
+        "feature_means": {
+          "kurtosis": 6298.804815727272,
+          "range_over_std": 199.46527327404084,
+          "skewness": 35.84077826909091
+        },
+        "n": 22,
+        "reference_anomalies": 0
+      },
+      {
+        "cluster": "3",
+        "dependency_groups": [
+          "smart_pdm:week-block:2022-09",
+          "smart_pdm:week-block:2022-11",
+          "smart_pdm:week-block:2022-13",
+          "smart_pdm:week-block:2022-14",
+          "smart_pdm:week-block:2022-23"
+        ],
+        "feature_means": {
+          "kurtosis": 351.23965303328134,
+          "range_over_std": 87.52849178546236,
+          "skewness": 0.6089016900501393
+        },
+        "n": 359,
+        "reference_anomalies": 11
+      }
+    ],
+    "reference_ari_descriptive_only": -0.02361672106917487,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.815985444,
+      441.7806213,
+      105.41129582117536
+    ],
+    "scaler_scale": [
+      5.674248237,
+      1193.45365665,
+      67.82177814476296
+    ],
+    "seed": 2026,
+    "silhouette": 0.5691946349673533,
+    "sizes": {
+      "0": 98,
+      "1": 32,
+      "2": 22,
+      "3": 359
+    },
+    "source": "smart_pdm",
+    "stability_status": "leave-group-out measured"
+  },
+  {
+    "contamination": 0.01,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "flagged": 6,
+    "flags_are_fault_labels": false,
+    "groups": 5,
+    "method": "IsolationForest",
+    "n": 511,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.815985444,
+      441.7806213,
+      105.41129582117536
+    ],
+    "scaler_scale": [
+      5.674248237,
+      1193.45365665,
+      67.82177814476296
+    ],
+    "seed": 2026,
+    "source": "smart_pdm"
+  },
+  {
+    "contamination": 0.05,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "flagged": 26,
+    "flags_are_fault_labels": false,
+    "groups": 5,
+    "method": "IsolationForest",
+    "n": 511,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.815985444,
+      441.7806213,
+      105.41129582117536
+    ],
+    "scaler_scale": [
+      5.674248237,
+      1193.45365665,
+      67.82177814476296
+    ],
+    "seed": 2026,
+    "source": "smart_pdm"
+  },
+  {
+    "contamination": 0.1,
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "flagged": 51,
+    "flags_are_fault_labels": false,
+    "groups": 5,
+    "method": "IsolationForest",
+    "n": 511,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      0.815985444,
+      441.7806213,
+      105.41129582117536
+    ],
+    "scaler_scale": [
+      5.674248237,
+      1193.45365665,
+      67.82177814476296
+    ],
+    "seed": 2026,
+    "source": "smart_pdm"
+  },
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "RTD",
+      "TC1",
+      "TC6",
+      "TC9"
+    ],
+    "groups": 2,
+    "k": 2,
+    "leave_group_out_ari": [
+      -0.07375370928486659,
+      0.0
+    ],
+    "method": "KMeans",
+    "n": 1043,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "ult:freezer:806272",
+          "ult:freezer:806273"
+        ],
+        "feature_means": {
+          "RTD": -80.39555189456338,
+          "TC1": -0.5525535420098846,
+          "TC6": -29.441021416803967,
+          "TC9": 20.863097199341027
+        },
+        "n": 607,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "ult:freezer:806273"
+        ],
+        "feature_means": {
+          "RTD": -10.544495412844043,
+          "TC1": -33.54724770642199,
+          "TC6": -1.6403669724770638,
+          "TC9": 58.73922018348621
+        },
+        "n": 436,
+        "reference_anomalies": null
+      }
+    ],
+    "reference_ari_descriptive_only": null,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -79.3,
+      -20.7,
+      -10.9,
+      25.3
+    ],
+    "scaler_scale": [
+      63.900000000000006,
+      36.050000000000004,
+      45.95,
+      44.5
+    ],
+    "seed": 2026,
+    "silhouette": 0.5787273883913268,
+    "sizes": {
+      "0": 607,
+      "1": 436
+    },
+    "source": "ult_freezers",
+    "stability_status": "leave-group-out measured"
+  },
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "RTD",
+      "TC1",
+      "TC6",
+      "TC9"
+    ],
+    "groups": 2,
+    "k": 3,
+    "leave_group_out_ari": [
+      -0.0027004140875887587,
+      0.7041705705660348
+    ],
+    "method": "KMeans",
+    "n": 1043,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "ult:freezer:806272",
+          "ult:freezer:806273"
+        ],
+        "feature_means": {
+          "RTD": -78.87807017543857,
+          "TC1": 10.830701754385965,
+          "TC6": -1.002631578947369,
+          "TC9": 23.55000000000001
+        },
+        "n": 228,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "ult:freezer:806273"
+        ],
+        "feature_means": {
+          "RTD": -10.303738317757011,
+          "TC1": -33.99112149532707,
+          "TC6": -1.5193925233644854,
+          "TC9": 59.193925233644826
+        },
+        "n": 428,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "2",
+        "dependency_groups": [
+          "ult:freezer:806272",
+          "ult:freezer:806273"
+        ],
+        "feature_means": {
+          "RTD": -80.11188630490946,
+          "TC1": -7.450129198966413,
+          "TC6": -45.754521963824295,
+          "TC9": 19.560206718346258
+        },
+        "n": 387,
+        "reference_anomalies": null
+      }
+    ],
+    "reference_ari_descriptive_only": null,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -79.3,
+      -20.7,
+      -10.9,
+      25.3
+    ],
+    "scaler_scale": [
+      63.900000000000006,
+      36.050000000000004,
+      45.95,
+      44.5
+    ],
+    "seed": 2026,
+    "silhouette": 0.568228203022497,
+    "sizes": {
+      "0": 228,
+      "1": 428,
+      "2": 387
+    },
+    "source": "ult_freezers",
+    "stability_status": "leave-group-out measured"
+  },
+  {
+    "clusters_are_fault_labels": false,
+    "features": [
+      "RTD",
+      "TC1",
+      "TC6",
+      "TC9"
+    ],
+    "groups": 2,
+    "k": 4,
+    "leave_group_out_ari": [
+      0.7125849307753657,
+      0.4651211380317741
+    ],
+    "method": "KMeans",
+    "n": 1043,
+    "n_init": 10,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "profiles": [
+      {
+        "cluster": "0",
+        "dependency_groups": [
+          "ult:freezer:806272"
+        ],
+        "feature_means": {
+          "RTD": -80.16281249999994,
+          "TC1": -2.5506249999999993,
+          "TC6": -48.65375000000002,
+          "TC9": 14.7215625
+        },
+        "n": 320,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "1",
+        "dependency_groups": [
+          "ult:freezer:806273"
+        ],
+        "feature_means": {
+          "RTD": -0.4749253731343286,
+          "TC1": -34.610746268656705,
+          "TC6": 3.5441791044776125,
+          "TC9": 59.64656716417907
+        },
+        "n": 335,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "2",
+        "dependency_groups": [
+          "ult:freezer:806272",
+          "ult:freezer:806273"
+        ],
+        "feature_means": {
+          "RTD": -78.862331838565,
+          "TC1": 11.522869955156953,
+          "TC6": -1.008520179372198,
+          "TC9": 23.516143497757852
+        },
+        "n": 223,
+        "reference_anomalies": null
+      },
+      {
+        "cluster": "3",
+        "dependency_groups": [
+          "ult:freezer:806272",
+          "ult:freezer:806273"
+        ],
+        "feature_means": {
+          "RTD": -60.60606060606061,
+          "TC1": -31.035151515151522,
+          "TC6": -24.115757575757574,
+          "TC9": 50.530909090909084
+        },
+        "n": 165,
+        "reference_anomalies": null
+      }
+    ],
+    "reference_ari_descriptive_only": null,
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -79.3,
+      -20.7,
+      -10.9,
+      25.3
+    ],
+    "scaler_scale": [
+      63.900000000000006,
+      36.050000000000004,
+      45.95,
+      44.5
+    ],
+    "seed": 2026,
+    "silhouette": 0.5589499396755662,
+    "sizes": {
+      "0": 320,
+      "1": 335,
+      "2": 223,
+      "3": 165
+    },
+    "source": "ult_freezers",
+    "stability_status": "leave-group-out measured"
+  },
+  {
+    "contamination": 0.01,
+    "features": [
+      "RTD",
+      "TC1",
+      "TC6",
+      "TC9"
+    ],
+    "flagged": 11,
+    "flags_are_fault_labels": false,
+    "groups": 2,
+    "method": "IsolationForest",
+    "n": 1043,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -79.3,
+      -20.7,
+      -10.9,
+      25.3
+    ],
+    "scaler_scale": [
+      63.900000000000006,
+      36.050000000000004,
+      45.95,
+      44.5
+    ],
+    "seed": 2026,
+    "source": "ult_freezers"
+  },
+  {
+    "contamination": 0.05,
+    "features": [
+      "RTD",
+      "TC1",
+      "TC6",
+      "TC9"
+    ],
+    "flagged": 53,
+    "flags_are_fault_labels": false,
+    "groups": 2,
+    "method": "IsolationForest",
+    "n": 1043,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -79.3,
+      -20.7,
+      -10.9,
+      25.3
+    ],
+    "scaler_scale": [
+      63.900000000000006,
+      36.050000000000004,
+      45.95,
+      44.5
+    ],
+    "seed": 2026,
+    "source": "ult_freezers"
+  },
+  {
+    "contamination": 0.1,
+    "features": [
+      "RTD",
+      "TC1",
+      "TC6",
+      "TC9"
+    ],
+    "flagged": 105,
+    "flags_are_fault_labels": false,
+    "groups": 2,
+    "method": "IsolationForest",
+    "n": 1043,
+    "n_estimators": 100,
+    "parent_run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+    "scale": "RobustScaler, source train only",
+    "scaler_center": [
+      -79.3,
+      -20.7,
+      -10.9,
+      25.3
+    ],
+    "scaler_scale": [
+      63.900000000000006,
+      36.050000000000004,
+      45.95,
+      44.5
+    ],
+    "seed": 2026,
+    "source": "ult_freezers"
+  }
+]

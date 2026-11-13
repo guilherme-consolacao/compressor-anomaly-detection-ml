@@ -1,0 +1,51 @@
+{
+  "canonical_contract": "study_observations + study_feature_values; one source-namespaced observation, explicit signal definition per value",
+  "duplicate_observation_ids": 0,
+  "external_data_read": false,
+  "extremes": "train IQR flags below are descriptive; retained as possible operational/fault evidence",
+  "kaist_raw_declared_empty_channels": 4,
+  "missing_values": 0,
+  "missing_values_scope": "prepared scalar features; raw declared empty channels are reported separately, never imputed",
+  "nonfinite_values": 0,
+  "observations": 3125,
+  "parse_invalid": 0,
+  "source_counts": {
+    "kaist": 288,
+    "rwth_r290": 195,
+    "smart_pdm": 1111,
+    "ult_freezers": 1531
+  },
+  "treatments": [
+    {
+      "after": 3125,
+      "before": 3125,
+      "removed": 0,
+      "rule": "strict parser/schema failures reject a source run; no silent deletion"
+    },
+    {
+      "after": 195,
+      "before": 200,
+      "rule": "RWTH exact session/charge association",
+      "unmatched": 5
+    }
+  ],
+  "unknowns": {
+    "kaist": [
+      "thermal/vibration simultaneity",
+      "transfer to refrigerating compressor"
+    ],
+    "rwth_r290": [
+      "binary fault reference"
+    ],
+    "smart_pdm": [
+      "physical device ID",
+      "vibration calibration/unit",
+      "bandwidth"
+    ],
+    "ult_freezers": [
+      "fault onset",
+      "timezone",
+      "controller/header identity discrepancies"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "parent_protocol": "transfer-protocol-2b941b65972c76bd9371",
+  "external_data_allowed": false,
+  "public_test_opened": false,
+  "smart_cohort": "round2-wave-selection.json, 263 preselected development cycles",
+  "evaluation": "fixed SMART 3-fold held-week blocks; earlier validation is known development",
+  "representation": {
+    "band_hz": [
+      10,
+      1000
+    ],
+    "PSD": "Welch, detrend constant, 1-second segments for SMART; published averaged PSD for RWTH",
+    "features": [
+      "8 spectral moments/band fractions",
+      "32 fixed energy bins",
+      "6 dominant-peak/harmonic descriptors"
+    ],
+    "triaxial": "mean of per-axis dimensionless signatures; conditional alignment, not guaranteed scalar equivalence"
+  },
+  "bridge": {
+    "training": "all 195 previously known RWTH public development conditions; original validation is retired auxiliary development; no external or sealed SMART test",
+    "diagnostics": "leave-one-session-out across all 9 known RWTH development sessions; regime controls retained",
+    "predictors": [
+      "temperature_lift_c",
+      "subcooling_c",
+      "specific_work_kjkg"
+    ],
+    "minimum_oof_r2": 0.6,
+    "minimum_group_mae_improvement_over_regime": 0.2,
+    "model": {
+      "n_estimators": 200,
+      "max_depth": 5,
+      "min_samples_leaf": 3,
+      "random_state": 2026
+    },
+    "extrapolation_policy": "exclude projected TRI training cases outside the RWTH training predictor min/max box; report all coverage; not a guarantee of conditional support",
+    "specific_work_normalization": true,
+    "rwth_known_development": true,
+    "normalization_formula": "specific_work_kjkg = 1000 * compressor_power_kw / refrigerant_mass_flow_gs; both bridge sources use R290",
+    "predictor_change_reason": "Discharge superheat is compressor-design dependent and put both TRI no-fault cases outside the RWTH support; retain cycle lift, subcooling and specific compression work as the more comparable R290 state representation.",
+    "admission_role": "operating_proxy",
+    "minimum_group_mae_improvement_over_constant": 0.25,
+    "scope": "Derived operating-state descriptors only. Failure-specific interpretation explicitly rejected unless independently established."
+  },
+  "classifiers": {
+    "n_estimators": 200,
+    "max_depth": [
+      5,
+      null
+    ],
+    "min_samples_leaf": [
+      3,
+      10
+    ],
+    "random_state": 2026,
+    "raw_smart_families": [
+      "vibration",
+      "current",
+      "vibration_and_current"
+    ],
+    "shared_comparisons": [
+      "SMART only",
+      "SMART plus projected TRI references"
+    ],
+    "projected_source_mass": [
+      0.1,
+      1.0
+    ],
+    "alignment": [
+      "none",
+      "training-normal mean shift"
+    ],
+    "weighting": "equal total class mass within each source; TRI source total mass specified, source-domain indicators excluded"
+  },
+  "tri_policy": {
+    "train": "10 kW non-OC condition medians",
+    "diagnostic": "12 kW non-OC condition medians",
+    "sealed": "OC cases",
+    "labels": "original measured-fault reference, never inferred from bridge output",
+    "feature_origin": "estimated from public paired RWTH relation, not measured vibration"
+  },
+  "probability": "uncalibrated reference-state score; selected-cohort class prevalence is not deployment prevalence",
+  "normality_auxiliary": "normal-only IsolationForest scores can be compared as exploratory descriptors, never substituted for Random Forest objective",
+  "round_name": "round4-proxy",
+  "prior_round": "spectral-round3-c61d2d3fdf5e9f3a0d50",
+  "hypothesis": "A predictable operating-state proxy may still aid a reference classifier even when it adds no information over known operating controls. Independent SMART fault labels decide usefulness; proxy correlation is not evidence of compressor damage.",
+  "final_acceptance_change": false
+}

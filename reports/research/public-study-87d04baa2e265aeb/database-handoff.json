@@ -1,0 +1,136 @@
+{
+  "database": "compressor_ml_dev",
+  "external_test_executed": false,
+  "host": "127.0.0.1",
+  "metabase_configured": false,
+  "query_checks": [
+    {
+      "columns": [
+        "source_id",
+        "source_version",
+        "data_origin",
+        "title",
+        "license_name",
+        "inspection_status"
+      ],
+      "query": 1,
+      "rows": 8
+    },
+    {
+      "columns": [
+        "source_id",
+        "label_version",
+        "label_status",
+        "target_label",
+        "observations",
+        "initial_dependency_groups"
+      ],
+      "query": 2,
+      "rows": 6
+    },
+    {
+      "columns": [
+        "dataset_version",
+        "source_id",
+        "partition_name",
+        "label_status",
+        "target_label",
+        "observations",
+        "frozen_dependency_groups"
+      ],
+      "query": 3,
+      "rows": 14
+    },
+    {
+      "columns": [
+        "run_id",
+        "source_id",
+        "statistic_name",
+        "feature_name",
+        "other_feature_name",
+        "numeric_value",
+        "sample_count",
+        "group_count",
+        "partition_name",
+        "training_comparison"
+      ],
+      "query": 4,
+      "rows": 792
+    },
+    {
+      "columns": [
+        "run_id",
+        "source_id",
+        "configuration_json",
+        "cluster_label",
+        "is_noise",
+        "observations",
+        "mean_outlier_score"
+      ],
+      "query": 5,
+      "rows": 60
+    },
+    {
+      "columns": [
+        "run_id",
+        "source_id",
+        "observation_id",
+        "feature_contract_version",
+        "feature_name",
+        "numeric_value",
+        "definition_json"
+      ],
+      "query": 6,
+      "rows": 2706
+    },
+    {
+      "columns": [
+        "equipment_id",
+        "source_local_time",
+        "time_semantics",
+        "feature_contract_version",
+        "feature_name",
+        "numeric_value",
+        "unit"
+      ],
+      "query": 7,
+      "rows": 16841
+    }
+  ],
+  "run_states": [
+    {
+      "runs": 34,
+      "status": "completed"
+    },
+    {
+      "runs": 4,
+      "status": "failed"
+    }
+  ],
+  "source_counts": [
+    {
+      "observations": 288,
+      "source_id": "kaist"
+    },
+    {
+      "observations": 195,
+      "source_id": "rwth_r290"
+    },
+    {
+      "observations": 1111,
+      "source_id": "smart_pdm"
+    },
+    {
+      "observations": 1531,
+      "source_id": "ult_freezers"
+    }
+  ],
+  "tables": {
+    "study_clusters": 10986,
+    "study_dataset_members": 3125,
+    "study_feature_values": 142311,
+    "study_labels": 3125,
+    "study_observations": 3125,
+    "study_statistics": 2360
+  }
+}

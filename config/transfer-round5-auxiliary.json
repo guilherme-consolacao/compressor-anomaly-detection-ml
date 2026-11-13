@@ -1,0 +1,43 @@
+{
+  "round_name": "round5-auxiliary",
+  "parent_protocol": "transfer-protocol-2b941b65972c76bd9371",
+  "external_data_allowed": false,
+  "public_test_opened": false,
+  "hypothesis": "Same-provider measured mechanical controls may help transfer fault-related vibration/current features to refrigerator cycles; independent held-week SMART references decide usefulness.",
+  "role": "auxiliary mechanical control, no claim of independent refrigerator equipment validation",
+  "metadata_policy": "headerless 11-column provider CSV; last SummerTime annotation excluded from matching/labels, original file preserved; conflicting metadata or feature IDs quarantined",
+  "label_policies": [
+    "anchor_only",
+    "mechanical_only: Working=0, Motor/Bearings=1, Heating excluded",
+    "all_malfunctions: Working=0, all known faults=1"
+  ],
+  "auxiliary_source_mass": [
+    0.1,
+    1.0
+  ],
+  "excluded_features": [
+    "ActP__fourier_entropy__bins_5",
+    "ActP__fourier_entropy__bins_10"
+  ],
+  "feature_families": [
+    "published vibration 25",
+    "published current 25",
+    "shared published 73"
+  ],
+  "classifier": {
+    "n_estimators": 200,
+    "max_depth": [
+      5,
+      null
+    ],
+    "min_samples_leaf": [
+      3,
+      10
+    ],
+    "seed": 2026,
+    "weights": "equal total reference-class mass per source, auxiliary source mass specified",
+    "threshold": 0.5
+  },
+  "evaluation": "all 818 SMART known-development cycles, fixed 3 held-week folds, 13 positives; 293 test cycles remain sealed",
+  "final_acceptance_change": false
+}

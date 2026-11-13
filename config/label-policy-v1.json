@@ -1,0 +1,32 @@
+{
+  "version": "public-label-policy-v1",
+  "candidate_target": "abnormal operation with a provider reference; cross-equipment interpretation remains conditional",
+  "smart_pdm": {
+    "Normal": {"target": 0, "status": "reference"},
+    "Malfunction": {"target": 1, "status": "reference"},
+    "scope": "appliance maintenance state, not a confirmed compressor-specific diagnosis",
+    "physical_equipment_id": "unknown; cycles are not independent devices"
+  },
+  "kaist": {
+    "Normal": {"target": 0, "status": "reference"},
+    "BPFO_03": {"target": 1, "status": "reference"},
+    "scope": "selected normal/induced outer-bearing condition on a rotating-machine bench",
+    "unselected_diagnoses": "not imported or silently mapped by this version",
+    "groups": "all channels/windows/conditions at the same selected load remain together"
+  },
+  "rwth_r290": {
+    "target": null,
+    "status": "indeterminate",
+    "reason": "refrigerant charge and operating frequency are conditions, not independent binary failure labels"
+  },
+  "ult_freezers": {
+    "target": null,
+    "status": "indeterminate",
+    "reason": "service-request date does not identify the true onset/extent of faulty minutes; absence of an event is not normality proof",
+    "groups": "provider freezer identity; preserve controller/header discrepancies"
+  },
+  "transfer": {
+    "accepted_derived_labels": 0,
+    "rule": "Clusters and unusual values propose hypotheses; preserve reference labels and require independent target evidence before accepting a derived label."
+  }
+}

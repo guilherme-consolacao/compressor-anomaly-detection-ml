@@ -1,0 +1,200 @@
+{
+  "blocking_reasons": [
+    "The public temporal vibration representation cannot currently be reproduced from the documented acquisition contract.",
+    "SMART and KAIST reference labels describe different failure scopes; a broad abnormality mapping remains conditional.",
+    "RWTH and sampled ULT provide no independently validated binary labels at the proposed analysis units; no pseudo-labels were accepted.",
+    "Only four SMART positive connected week blocks and two sampled KAIST loads limit validation; no independent field accuracy exists."
+  ],
+  "candidate_counts": [
+    {
+      "label_status": "reference",
+      "n": 288,
+      "source_id": "kaist"
+    },
+    {
+      "label_status": "indeterminate",
+      "n": 195,
+      "source_id": "rwth_r290"
+    },
+    {
+      "label_status": "reference",
+      "n": 1111,
+      "source_id": "smart_pdm"
+    },
+    {
+      "label_status": "indeterminate",
+      "n": 1531,
+      "source_id": "ult_freezers"
+    }
+  ],
+  "dataset_version": "public-study-87d04baa2e265aeb",
+  "decision": "unsupported_for_current_application",
+  "evidence": [
+    "descriptive.csv",
+    "correlations.csv",
+    "clusters.json",
+    "integration.json",
+    "compatibility.json"
+  ],
+  "external_accuracy_measured": false,
+  "external_data_read": false,
+  "final_model_trained": false,
+  "next_decision": "The team must choose a public-only research deliverable with a reduced claim, or provide a demonstrably compatible acquisition/independent target reference. Do not silently replace the agreed multibase local objective.",
+  "pseudo_labels_accepted": 0,
+  "public_comparisons": [
+    {
+      "accuracy": 0.6666666666666666,
+      "average_precision": 0.34183491292559365,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "fn": 48,
+      "fp": 0,
+      "n": 144,
+      "precision": null,
+      "recall": 0.0,
+      "tn": 96,
+      "tp": 0,
+      "training": "smart_only",
+      "training_groups": 5,
+      "validation_groups": 1,
+      "validation_source": "kaist"
+    },
+    {
+      "accuracy": 0.8273615635179153,
+      "average_precision": 0.009523809523809525,
+      "balanced_accuracy": 0.4150326797385621,
+      "f1": 0.0,
+      "fn": 1,
+      "fp": 52,
+      "n": 307,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tn": 254,
+      "tp": 0,
+      "training": "smart_only",
+      "training_groups": 5,
+      "validation_groups": 4,
+      "validation_source": "smart_pdm"
+    },
+    {
+      "accuracy": 0.9722222222222222,
+      "average_precision": 0.9986975397428476,
+      "balanced_accuracy": 0.9635416666666667,
+      "f1": 0.9574468085106383,
+      "fn": 3,
+      "fp": 1,
+      "n": 144,
+      "precision": 0.9782608695652174,
+      "recall": 0.9375,
+      "tn": 95,
+      "tp": 45,
+      "training": "kaist_only",
+      "training_groups": 1,
+      "validation_groups": 1,
+      "validation_source": "kaist"
+    },
+    {
+      "accuracy": 0.003257328990228013,
+      "average_precision": 0.0035335689045936395,
+      "balanced_accuracy": 0.5,
+      "f1": 0.006493506493506494,
+      "fn": 0,
+      "fp": 306,
+      "n": 307,
+      "precision": 0.003257328990228013,
+      "recall": 1.0,
+      "tn": 0,
+      "tp": 1,
+      "training": "kaist_only",
+      "training_groups": 1,
+      "validation_groups": 4,
+      "validation_source": "smart_pdm"
+    },
+    {
+      "accuracy": 0.9722222222222222,
+      "average_precision": 0.9986975397428475,
+      "balanced_accuracy": 0.9635416666666667,
+      "f1": 0.9574468085106383,
+      "fn": 3,
+      "fp": 1,
+      "n": 144,
+      "precision": 0.9782608695652174,
+      "recall": 0.9375,
+      "tn": 95,
+      "tp": 45,
+      "training": "combined_references",
+      "training_groups": 6,
+      "validation_groups": 1,
+      "validation_source": "kaist"
+    },
+    {
+      "accuracy": 0.996742671009772,
+      "average_precision": 0.004608294930875576,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "fn": 1,
+      "fp": 0,
+      "n": 307,
+      "precision": null,
+      "recall": 0.0,
+      "tn": 306,
+      "tp": 0,
+      "training": "combined_references",
+      "training_groups": 6,
+      "validation_groups": 4,
+      "validation_source": "smart_pdm"
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "average_precision": 0.3333333333333333,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "fn": 48,
+      "fp": 0,
+      "n": 144,
+      "precision": null,
+      "recall": 0.0,
+      "tn": 96,
+      "tp": 0,
+      "training": "majority_normal",
+      "validation_groups": 1,
+      "validation_source": "kaist"
+    },
+    {
+      "accuracy": 0.996742671009772,
+      "average_precision": 0.003257328990228013,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "fn": 1,
+      "fp": 0,
+      "n": 307,
+      "precision": null,
+      "recall": 0.0,
+      "tn": 306,
+      "tp": 0,
+      "training": "majority_normal",
+      "validation_groups": 4,
+      "validation_source": "smart_pdm"
+    }
+  ],
+  "public_integration": "conditional",
+  "public_validation_bar": [
+    {
+      "balanced_accuracy_met": true,
+      "groups": 1,
+      "precision_met": true,
+      "recall_met": true,
+      "source": "kaist"
+    },
+    {
+      "balanced_accuracy_met": false,
+      "groups": 4,
+      "precision_met": false,
+      "recall_met": false,
+      "source": "smart_pdm"
+    }
+  ],
+  "release_final_training": false,
+  "run_id": "public-study-87d04baa2e265aeb-eda-737cd888",
+  "source_classifier_validation_accuracy": 0.9977827050997783
+}

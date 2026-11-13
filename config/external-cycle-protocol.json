@@ -1,0 +1,22 @@
+{
+  "protocol_version": "external-completed-cycles-v1",
+  "status": "prospective_protocol; execution pending confirmed local cycle-boundary workflow",
+  "model_version": "cycle-freeze-8af6bb44817d037a836c",
+  "model_artifact_sha256": "5a44da31f348a5a28b359f321d7c57e734963c112984762186c4a8ae30ca141f",
+  "contract_version": "cycle-context-normality-v1",
+  "unit": "completed operating cycle on one identified refrigerator; never an arbitrary request batch",
+  "boundary_capture": "operator records actual compressor activation/deactivation, UTC-aware times, stable equipment/cycle IDs and evidence independently of model output; any automated detector requires separate validation before adoption",
+  "input_fields": ["cycle_id", "equipment_id", "started_at", "ended_at", "closed", "boundary_evidence"],
+  "signal_policy": "existing temperature/instantaneous vibration readings may be linked for audit; this candidate does not use them as predictors, and does not infer cycle boundaries from sparse timestamp gaps",
+  "history": {"minimum_previous_cycles": 3, "maximum_previous_cycles": 10, "reset_gap_hours": 12, "reset_on_overlap": true, "labels_used_to_set_history": false},
+  "ground_truth": {"recorded_before_revealing_prediction": true, "fields": ["external_case_id", "truth_version", "reference_status", "target_label", "observer_name", "observed_at", "evidence_json"], "target": "observed functional maintenance reference; compressor-component diagnosis requires separate technical evidence", "unknown": "indeterminate, never automatically normal"},
+  "prospective_reservation": "historical backup was explored earlier and is not a pristine prospective test; reserve new cycles after this protocol/model freeze",
+  "sampling": {"normal_confirmed_cycles_target": 30, "positive_confirmed_cycles_target": 10, "normal_sessions_minimum": 2, "positive_episodes_minimum": 2, "warmup_cycles": "at least 3 before each reset; excluded from classified-case denominator, included in total coverage", "availability": "start with observed normal operation; absence of natural confirmed faults makes anomaly recall inconclusive"},
+  "metrics": ["TP", "TN", "FP", "FN", "precision", "recall", "balanced_accuracy", "false_positive_rate", "average_precision", "coverage", "indeterminate_references", "context_rejections", "group_uncertainty"],
+  "prototype_success": {"balanced_accuracy_minimum": 0.7, "anomaly_recall_minimum": 0.7, "false_positive_rate_maximum": 0.1, "eligible_coverage_target": 0.9, "support": "both classes and episode/session targets above; otherwise partial/inconclusive"},
+  "probability_policy": "evaluate experimental cohort-reference mapping with Brier/log loss and reliability only when reference support permits; raw 0.5 threshold remains frozen; no universal physical-failure probability claim",
+  "safe_observation": "do not create a dangerous fault or damage equipment to complete positive support",
+  "audit_destination": "study_external_cases, study_external_case_readings, study_external_ground_truth, study_external_predictions; case/model/truth versions explicit; private artifacts outside Git",
+  "tuning_policy": "no fitting, calibration, alignment or threshold selection using this campaign; any revision consumes it as known evidence and requires a new independent reservation",
+  "metabase": "out of scope; team members consume the database"
+}

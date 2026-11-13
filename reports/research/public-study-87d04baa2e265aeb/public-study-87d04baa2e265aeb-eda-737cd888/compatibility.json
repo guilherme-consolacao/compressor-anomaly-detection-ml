@@ -1,0 +1,59 @@
+{
+  "api_contract": {
+    "allowed_inspection": "source code/schema only, no external observations",
+    "preprocessing": "API already subtracts offsets and applies noise floor; never repeat",
+    "rms": "sqrt((x^2+y^2+z^2)/3), instantaneous spatial combination, not temporal RMS",
+    "temperature": "measurement location not confirmed; cannot equate to refrigerant/sump/bearing temperature",
+    "unsupported_inputs": [
+      "electrical signals absent from API",
+      "FFT or fast-signal moments without captured waveform",
+      "a guessed 15-second measurement",
+      "a cross-source correlation coefficient inferred from unpaired rows"
+    ]
+  },
+  "blocking_reasons": [
+    "The public temporal vibration representation cannot currently be reproduced from the documented acquisition contract.",
+    "SMART and KAIST reference labels describe different failure scopes; a broad abnormality mapping remains conditional.",
+    "RWTH and sampled ULT provide no independently validated binary labels at the proposed analysis units; no pseudo-labels were accepted.",
+    "Only four SMART positive connected week blocks and two sampled KAIST loads limit validation; no independent field accuracy exists."
+  ],
+  "candidate": {
+    "constant_signal": "undefined, refuse; never impute normal",
+    "definition": "adjusted Fisher-Pearson skewness, unbiased Fisher excess kurtosis, peak-to-peak divided by population standard deviation",
+    "features": [
+      "skewness",
+      "kurtosis",
+      "range_over_std"
+    ],
+    "time_support": "SMART full appliance cycle versus KAIST nonoverlapping 5 s channel window",
+    "unit": "1"
+  },
+  "matrix": [
+    {
+      "reason": "numerically shared dimensionless moments; different sampling/bandwidth, positions, window durations, devices and target diagnoses",
+      "relation": "SMART-KAIST vibration shape",
+      "status": "conditional"
+    },
+    {
+      "reason": "exact session/charge keys, 195 genuine paired conditions; no binary fault truth",
+      "relation": "RWTH inlet/outlet temperature and triaxial RMS",
+      "scope": "within-source paired operating-condition research only",
+      "status": "supported"
+    },
+    {
+      "reason": "known freezer models and thermal locations, but service date is not precise onset; no negative minute-level reference inferred",
+      "relation": "ULT thermal channels and repair events",
+      "status": "conditional"
+    },
+    {
+      "reason": "no verified shared representation/independent target labels for this transfer; marginal matching or clusters do not validate health labels",
+      "relation": "SMART labels transferred to RWTH/ULT",
+      "status": "unsupported"
+    },
+    {
+      "reason": "schema exposes temperature and one instantaneous calibrated XYZ tuple per reading; no rate/bandwidth/window contract to reproduce public temporal shape statistics",
+      "relation": "final public features from existing Ulisses API",
+      "status": "unsupported"
+    }
+  ]
+}

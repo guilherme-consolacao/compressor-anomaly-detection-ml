@@ -1,0 +1,8 @@
+* text=auto eol=lf
+
+# A proveniência do treinamento e do banco usa SHA-256 dos bytes originais.
+*.py -text whitespace=cr-at-eol
+*.sql -text whitespace=cr-at-eol
+database/local/schema.sql whitespace=cr-at-eol,-blank-at-eof
+config/** -text whitespace=cr-at-eol
+reports/research/** -text whitespace=cr-at-eol

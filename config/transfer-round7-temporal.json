@@ -1,0 +1,84 @@
+{
+  "round_name": "temporal-round7",
+  "parent_protocol": "transfer-protocol-2b941b65972c76bd9371",
+  "external_data_allowed": false,
+  "public_test_opened": false,
+  "hypothesis": "Appliance-level maintenance references may be expressed in operating-cycle behavior rather than the first 60/120 seconds of vibration. Test duration and strictly past, label-blind ratios; preserve semantic and coverage limits.",
+  "primary_anchor": "smart_pdm",
+  "anchor_families": [
+    "elapsed operating-cycle duration",
+    "duration relative to median of previous up to 10 observed cycles (minimum3)",
+    "both"
+  ],
+  "normality_stage": {
+    "model": "IsolationForest",
+    "n_estimators": 200,
+    "max_samples": 256,
+    "seed": 2026,
+    "scaler": "RobustScaler fitted on public reference normals only",
+    "descriptors": [
+      "mean_tail_rarity",
+      "maximum_tail_rarity",
+      "rare_feature_fraction",
+      "isolation_percentile"
+    ],
+    "scope": "empirical normality ranks, not physical-failure probabilities or formal coverage guarantees",
+    "crossfit": "all Random Forest training descriptors are produced without fitting their complete reference group"
+  },
+  "smart_groups": "fixed 3 outer week-block folds; remaining 2 buckets form inner cross-fitting; 293 final cycles sealed",
+  "nist_auxiliary": "all previously known 14/16 SEER development references; normality held out by whole equipment stratum; aggregate descriptors by label-consistent original experiment file",
+  "tri_auxiliary": "all previously known non-OC 10/12 kW references; normality held out by whole load/session collection; aggregate by test code; OC day remains sealed",
+  "auxiliary_features": [
+    "evaporating_c",
+    "condensing_c",
+    "discharge_c",
+    "liquid_line_c",
+    "mass_flow_gs",
+    "temperature_lift_c",
+    "discharge_above_condensing_c",
+    "subcooling_c"
+  ],
+  "auxiliary_source_mass": [
+    0.1,
+    1.0
+  ],
+  "classifier": {
+    "n_estimators": 200,
+    "max_depth": [
+      5,
+      null
+    ],
+    "min_samples_leaf": [
+      3,
+      10
+    ],
+    "seed": 2026,
+    "threshold": 0.5,
+    "class_mass": "equal per source/class; source indicators never predictors"
+  },
+  "comparison_sources": [
+    "anchor only",
+    "anchor + NIST",
+    "anchor + TRI",
+    "anchor + NIST + TRI"
+  ],
+  "limitations": [
+    "statistical analogy does not identify physical cross-source correlation",
+    "feature count and normal operating support can affect descriptor distributions",
+    "auxiliary original validation has become known development",
+    "no derived physical fault labels",
+    "provider model/time block does not identify a physical serial unit",
+    "closed-cycle duration supports after-cycle assessment, not time-to-failure prediction",
+    "unobserved cycles and acquisition gaps can censor history"
+  ],
+  "final_acceptance_change": false,
+  "primary_representation": "causal_cycle_context",
+  "cycle_context": {
+    "history_size": 10,
+    "minimum_history": 3,
+    "maximum_gap_hours": 12
+  },
+  "context_policy": "History stays inside the original dependency group; current/future cycles and all labels do not set its baseline. Cold starts, overlaps and gaps reset or abstain; report coverage, never fill unknown context as normal.",
+  "inference_unit": "documented completed operating cycle, not an arbitrary packet/window; timestamp gaps are not assumed to mean the compressor was off",
+  "local_data_policy": "no local readings; future frozen causal feature calculation is not model fitting or label calibration"
+}

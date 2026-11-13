@@ -1,0 +1,17 @@
+{
+  "contract_version": "cycle-context-normality-v1",
+  "confirmation_run": "temporal-round8-9492770bdefcfd8c0fcd",
+  "selection_evidence": "Among real multibase configurations meeting unchanged prototype discrimination gates, raw_fixed smart_nist_tri has lower Brier than smart_tri (0.040607 vs 0.040908). Its AP is 0.5325 vs 0.1616-0.2567 in three label-permutation controls. Calibration remains insufficient for a physical-failure probability claim.",
+  "variant": {"id": "smart_nist_tri", "sources": ["nist_hvac", "tri_hp_faults"], "leaf": 10},
+  "classifier": {"n_estimators": 200, "max_depth": 5, "seed": 2026, "auxiliary_mass": 1.0},
+  "raw_decision_threshold": 0.5,
+  "probability_mapping": "experimental LogisticRegression C=1 fitted on complete held-group SMART development raw scores; never affects the fixed raw-score decision",
+  "probability_support": "limited, nested calibrator training had as few as two positive cases; output is a cohort-reference estimate, not a validated defect probability",
+  "cycle_context": {"history_size": 10, "minimum_history": 3, "maximum_gap_hours": 12},
+  "auxiliary_vectors": "reports/research/temporal-round7-c2f700026e1cc1c77edd/auxiliary-normality-experiments.csv",
+  "test_once": ["293 originally reserved SMART cycles, causal history restricted to each reserved dependency group", "2 TRI OC conditions from the reserved day, matched to original held-load normality encoders"],
+  "acceptance": "Original v2 prototype metrics and support unchanged; report every source separately, cold starts and group uncertainty. This is a public research decision, never local release.",
+  "external_data_allowed": false,
+  "local_portability_status": "pending real completed-cycle boundaries; raw temperature/instantaneous-vibration packets cannot meet this contract",
+  "scope": "after-cycle operational maintenance reference; no compressor-component diagnosis or remaining-life forecast"
+}

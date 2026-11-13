@@ -1,0 +1,115 @@
+{
+  "files": [
+    {
+      "byte_size": 70504,
+      "content_sha256": "90228589de59fb22b48efc2d11a7170ffcc05774a6c8cb5fdaf12b0eb5a612bd",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\candidate-train.csv"
+    },
+    {
+      "byte_size": 34188,
+      "content_sha256": "b52dbabab9fbf8e62f0462b9194d7d7a7afa5333ff298ca6f2b2b2885e7f6fa2",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\clusters.json"
+    },
+    {
+      "byte_size": 2979,
+      "content_sha256": "4ea7ba75b4927e7b65a3e564f068d7303c2253eaccb219a7a2f4c76cf7ee0dc2",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\compatibility.json"
+    },
+    {
+      "byte_size": 70021,
+      "content_sha256": "75ee600b29a6450edea5dd0a03fa66c5974d4745e65ab7e50c9f32e0c19910d1",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\correlations.csv"
+    },
+    {
+      "byte_size": 86499,
+      "content_sha256": "5f592aed5ca4913dd36feebaff9233670de02cb69f94dc5478a2dfc5f9edb553",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\descriptive-by-group.csv"
+    },
+    {
+      "byte_size": 29403,
+      "content_sha256": "3cd041cf3f81e11a134f0aa71575bd1d738d7a7d54a21667efe2eeb4c229611b",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\descriptive-by-reference.csv"
+    },
+    {
+      "byte_size": 21776,
+      "content_sha256": "0905ba570938c27bd5d5f9b0c50d62c988fa1d90a01901441eee3cb40cb28b70",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\descriptive.csv"
+    },
+    {
+      "byte_size": 93,
+      "content_sha256": "c1a8b7437e81955e636c559ab17318456dcafdfca4f66ddf48bce15839800234",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\extremes-retained.csv"
+    },
+    {
+      "byte_size": 5463,
+      "content_sha256": "842f2e39916fe55b65f55fccb7da890fd0c4d4ac94603cc62c7d54139b502150",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\feasibility.json"
+    },
+    {
+      "byte_size": 5088,
+      "content_sha256": "9239d350314b9312ab8e121a8b85c8ecd3094077cbbec3b1a09ec578d9369b04",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\integration.json"
+    },
+    {
+      "byte_size": 85462,
+      "content_sha256": "b1fccd10be6d1bb8fb340ca16cc020002ffcbf08b3ec8216fe88feab0487a793",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\kaist-distributions.png"
+    },
+    {
+      "byte_size": 35472,
+      "content_sha256": "798a173c115dd9f2d61d3b2353e92c4d00b4241f44565809cff767373bfcf22a",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\kaist-evolution.png"
+    },
+    {
+      "byte_size": 425846,
+      "content_sha256": "0e99ea5c3f7976e0209cbbf593ed80a3dd646690123bbac3839071ddd0c4e584",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\labels.csv"
+    },
+    {
+      "byte_size": 1408,
+      "content_sha256": "00076d73a3429043e1a9a8288a39629084278fc911bd09b03047365d9d9f1bba",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\quality.json"
+    },
+    {
+      "byte_size": 86537,
+      "content_sha256": "fb6cd8ba76436ea9ab35d8cf7d5816a8c5af2478d5e41f343309808005b05de5",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\rwth_r290-distributions.png"
+    },
+    {
+      "byte_size": 49593,
+      "content_sha256": "e6f9f231035d6ca37f63efe81d7cf565b8c08f85ba99d64b10bc6a90d9ee8889",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\rwth_r290-evolution.png"
+    },
+    {
+      "byte_size": 96084,
+      "content_sha256": "0e467b9220aeea73b90e83729b4d2622a7e40fa41f1bb817bc2ee8243099da1b",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\smart_pdm-distributions.png"
+    },
+    {
+      "byte_size": 67394,
+      "content_sha256": "83f181b8d183026eb710c287978f1517d0cbe2130894d27a25909c6aad6435fc",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\smart_pdm-evolution.png"
+    },
+    {
+      "byte_size": 6812,
+      "content_sha256": "6047b4b107dcc97082c4aa938ef186721f48a6853224529193a268ee1ca99b57",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\source-feature-availability.csv"
+    },
+    {
+      "byte_size": 127973,
+      "content_sha256": "e972cc2e46b6b58ce5cbf6aba559d1667997fa6cf6727c2d2151fd4143b9ec0e",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\transfer-predictions.csv"
+    },
+    {
+      "byte_size": 89269,
+      "content_sha256": "47da11e858fa5b3b1f405e423699ff68b2db05bd8442b374bc6d537348454502",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\ult_freezers-distributions.png"
+    },
+    {
+      "byte_size": 36942,
+      "content_sha256": "5c7eb46ac17993f3525960f160b27a98ccb71ebdc55c10df8829fe5694a00995",
+      "relative_path": "reports\\research\\public-study-87d04baa2e265aeb\\public-study-87d04baa2e265aeb-eda-737cd888\\ult_freezers-evolution.png"
+    }
+  ],
+  "run_id": "public-study-87d04baa2e265aeb-eda-737cd888"
+}

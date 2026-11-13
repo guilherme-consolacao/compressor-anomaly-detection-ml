@@ -1,0 +1,261 @@
+{
+  "registry_version": 7,
+  "sources": [
+    {
+      "data_origin": "public_measured",
+      "equipment": "SMEG FAB5ULRD3 refrigerator; individual physical unit and compressor model unknown",
+      "inspection_status": "inspected",
+      "labels": "Normal / Malfunction; appliance-level maintenance state",
+      "license_name": "CC BY 4.0",
+      "primary_url": "https://zenodo.org/records/7245198",
+      "raw_access": "public ZIP, approximately 6.9 GB; use bounded HTTP ranges first",
+      "resource_kind": "dataset",
+      "sampling_hz": {
+        "fast": 2048,
+        "slow": 1
+      },
+      "sensors": {
+        "electrical": "current, power and other electrical variables",
+        "vibration": "single scalar channel; physical conversion not confirmed"
+      },
+      "source_id": "smart_pdm",
+      "source_version": "7245198",
+      "temperature_available": false,
+      "title": "SMART-PDM Appliance Dataset: refrigerators",
+      "triaxial_available": false
+    },
+    {
+      "data_origin": "public_measured",
+      "equipment": "laboratory rotating machinery, not refrigerator compressor",
+      "inspection_status": "inspected",
+      "labels": "normal, bearing inner/outer faults, misalignment, unbalance; three loads",
+      "license_name": "CC BY 4.0",
+      "primary_url": "https://data.mendeley.com/datasets/ztmf3m7h5x/6",
+      "raw_access": "public metadata; file availability to verify",
+      "resource_kind": "dataset",
+      "sampling_hz": "unknown until file audit",
+      "sensors": {
+        "electrical": "U/V/W current, A",
+        "temperature": "housing A/B, degC",
+        "vibration": "housing A/B, x/y, g"
+      },
+      "source_id": "kaist",
+      "source_version": "ztmf3m7h5x.6",
+      "title": "Rotating machine under varying load conditions"
+    },
+    {
+      "data_origin": "public_measured",
+      "equipment": "receiver-equipped R290 heat pump",
+      "inspection_status": "inspected",
+      "labels": "no ready binary failure labels; refrigerant charge is measured experimental condition",
+      "license_name": "CC BY 4.0",
+      "primary_url": "https://zenodo.org/records/22097811",
+      "raw_access": "small processed ZIPs; raw vibration approximately 32 GB",
+      "resource_kind": "dataset",
+      "sampling_hz": "raw accelerometer rate to verify; 50/90 Hz are compressor operating frequencies",
+      "sensors": {
+        "temperature": "compressor inlet/outlet refrigerant, degC",
+        "vibration": "compressor housing XYZ, m/s^2; temporal RMS in 10-1000 Hz band"
+      },
+      "source_id": "rwth_r290",
+      "source_version": "22097811",
+      "title": "Refrigerant-charge-dependent thermodynamic and vibration behaviour"
+    },
+    {
+      "data_origin": "public_measured",
+      "equipment": "53 ultra-low-temperature freezers, cascade refrigeration",
+      "inspection_status": "inspected",
+      "labels": "maintenance/fault events, require temporal association",
+      "license_name": "CC0",
+      "primary_url": "https://doi.org/10.6084/m9.figshare.c.6805332.v1",
+      "raw_access": "public collection, file/license audit pending",
+      "resource_kind": "dataset",
+      "sampling_hz": "minute temperatures according to publication; verify files",
+      "sensors": {
+        "temperature": "multiple critical locations",
+        "vibration": "not confirmed"
+      },
+      "source_id": "ult_freezers",
+      "source_version": "6805332.v1",
+      "title": "Labelled ultra-low-temperature freezer dataset"
+    },
+    {
+      "data_origin": "public_reference",
+      "equipment": "hermetic refrigeration compressors",
+      "inspection_status": "inspected",
+      "labels": "normal and five manufacturing defects in study",
+      "license_name": null,
+      "primary_url": "https://www.mdpi.com/2076-3417/12/6/3033",
+      "raw_access": "no public raw archive confirmed",
+      "resource_kind": "paper",
+      "source_id": "hermetic_study",
+      "source_version": "app12063033",
+      "title": "Diagnosis of hermetic refrigeration compressor manufacturing defects"
+    },
+    {
+      "data_origin": "public_reference",
+      "inspection_status": "inspected",
+      "license_name": null,
+      "primary_url": "https://www.nist.gov/publications/vibration-signatures-three-positive-displacement-compressors",
+      "raw_access": "publication confirmed; reusable raw files not confirmed",
+      "resource_kind": "paper",
+      "source_id": "nist_compressors",
+      "source_version": "7183",
+      "title": "Vibration signatures for three positive displacement compressors"
+    },
+    {
+      "data_origin": "public_reference",
+      "inspection_status": "inspected",
+      "license_name": null,
+      "primary_url": "https://www.secop.com/products/technical-literature/technical-literature-show/catalogs",
+      "raw_access": "physical reference, not labeled sensor observations",
+      "resource_kind": "catalog",
+      "source_id": "secop_catalog",
+      "source_version": "2026",
+      "title": "Secop compressor catalogs"
+    },
+    {
+      "data_origin": "ulisses_external",
+      "inspection_status": "pending_evidence",
+      "license_name": "private",
+      "primary_url": "local://reserved-external",
+      "raw_access": "never read during public development; historical exposure documented in spec",
+      "resource_kind": "reserved_external",
+      "source_id": "ulisses",
+      "source_version": "external-reserved",
+      "title": "Reserved external compressor evaluation"
+    },
+    {
+      "source_id": "tri_hp_faults",
+      "source_version": "5155136.v1",
+      "data_origin": "public_measured",
+      "resource_kind": "dataset",
+      "title": "TRI-HP: controlled faults on a variable-speed propane heat pump",
+      "primary_url": "https://zenodo.org/records/5155136",
+      "license_name": "CC BY 4.0",
+      "inspection_status": "inspected",
+      "equipment": "10 kW water-water R290 variable-speed scroll-compressor heat pump; one laboratory bench, not a domestic refrigerator",
+      "labels": "NF no fault; EF evaporator fouling; CVL compressor valve leakage; LL liquid-line restriction; OC refrigerant overcharge; physically imposed conditions",
+      "sampling_hz": {
+        "main": 0.1,
+        "superheating": "separate asynchronous logger"
+      },
+      "sensors": {
+        "thermal": "saturation, compressor outlet and liquid line temperatures; not compressor carcass",
+        "electrical": "compressor electrical power",
+        "operating": "COP, condenser heat duty, refrigerant mass flow, compressor speed"
+      },
+      "temperature_available": true,
+      "triaxial_available": false,
+      "raw_access": "1.29 MB XLSX, checksum verified; first 13 main columns separated from auxiliary superheating table",
+      "limitations": [
+        "one physical bench",
+        "fault and date can be confounded",
+        "two normal sessions",
+        "no vibration channel",
+        "test code, timestamp and fault intensity excluded from predictors"
+      ]
+    },
+    {
+      "source_id": "nist_hvac",
+      "source_version": "2019.cooling-14-16seer",
+      "data_origin": "public_measured",
+      "resource_kind": "dataset",
+      "title": "NIST FDD measured heat-pump cooling summaries, 14 and 16 SEER",
+      "primary_url": "https://www.nist.gov/el/beed/hvacr-equipment-performance-group/fault-detection-and-diagnosis-research-data",
+      "license_name": "NIST non-SRD data terms; royalty-free worldwide reuse with acknowledgment",
+      "license_url": "https://www.nist.gov/open/license",
+      "inspection_status": "inspected",
+      "equipment": "Residential split heat pumps in cooling mode; 14/16 SEER equipment strata, serial identities not supplied here",
+      "labels": "NF(NO=0,Yes=1): 1=no fault, 0=fault; project target reverses this encoding; one missing label stays indeterminate",
+      "sensors": {
+        "thermal": "refrigerant line surface and saturation temperatures, air temperatures",
+        "electrical": "outdoor/indoor unit power and current, not compressor-only power",
+        "operating": "refrigerant mass flow and test-condition summaries"
+      },
+      "temperature_available": true,
+      "triaxial_available": false,
+      "raw_access": "7.27 MB official XLSX plus 1.66 MB description; original HTTPS bytes preserved with SHA-256",
+      "limitations": [
+        "air conditioning/heat pumps, not domestic refrigerators",
+        "no vibration channel",
+        "label and fault-severity fields excluded from predictors",
+        "steady-state summaries are not timestamped raw logger rows",
+        "outdoor power includes fan and is not equated to compressor power"
+      ]
+    },
+    {
+      "source_id": "smart_pdm_washers",
+      "source_version": "7245198.washers",
+      "data_origin": "public_measured",
+      "resource_kind": "dataset",
+      "title": "SMART-PDM washing-machine references: auxiliary mechanical controls",
+      "primary_url": "https://zenodo.org/records/7245198",
+      "license_name": "CC BY 4.0",
+      "inspection_status": "inspected",
+      "parent_dataset": "smart_pdm:7245198; appliance subset, not an independent refrigerator dataset",
+      "equipment": "Washing machines, four published models; physical serial identities unavailable",
+      "labels": "Original Working, Heating, Motor, Bearings; mechanical faults only as explicitly scoped auxiliary references",
+      "sensors": {
+        "vibration": "same-provider scalar channel, physical units unconfirmed",
+        "electrical": "same-provider current and active power features"
+      },
+      "sampling_hz": {
+        "fast": 2048,
+        "slow": 1
+      },
+      "temperature_available": false,
+      "triaxial_available": false,
+      "raw_access": "two small CSV members from public ZIP; CRC and local SHA-256, full archive hash not verified",
+      "limitations": [
+        "not refrigerator compressors",
+        "ambiguous cycle identifiers quarantined",
+        "all observed mechanical faults belong to one published model",
+        "same provider acquisition design, sensor equivalence conditional",
+        "two undefined active-power entropy fields excluded from comparisons"
+      ]
+    },
+    {
+      "source_id": "smart_manufacturing",
+      "source_version": "ae6d6bf256e80c0044dc52aafec32b0378eec5f9",
+      "data_origin": "public_measured",
+      "resource_kind": "dataset",
+      "title": "Smart Manufacturing Testbed inter-sensor controlled motor experiments",
+      "primary_url": "https://github.com/submission-2022/Smart-Manufacturing-Testbed-for-Anomaly-Detection",
+      "license_name": "CC0 1.0 Universal",
+      "inspection_status": "inspected",
+      "equipment": "Controlled motor imbalance bench, not refrigerator compressors",
+      "raw_access": "Pinned author Git commit; five files with Git blob verification and local SHA-256",
+      "sampling_hz": {
+        "mems": "paper says 10; per-sample timestamps absent",
+        "piezoelectric": "paper says 3200; ~0.000313 s within bursts, large gaps between bursts"
+      },
+      "labels": "native categories 1/2/3 preserved; mapping to normal/failure not explicitly confirmed, no binary labels accepted",
+      "limitations": [
+        "bench only",
+        "same condition/RPM permits condition-level comparison, not row pairing",
+        "unknown MEMS timestamps",
+        "PCB bursts cannot be concatenated as continuous waveform",
+        "not used to fit the frozen cycle model"
+      ]
+    },
+    {
+      "source_id": "ornl_co2",
+      "source_version": "13232627.v1",
+      "data_origin": "public_measured",
+      "resource_kind": "dataset",
+      "title": "Test Data of Supermarket Refrigeration System Fault Detection and Diagnostics",
+      "primary_url": "https://doi.org/10.6084/m9.figshare.13232627.v1",
+      "license_name": "CC BY 4.0",
+      "inspection_status": "candidate",
+      "equipment": "CO2 supermarket refrigeration rack, not domestic refrigerator",
+      "raw_access": "Provider metadata, code and partial header preview only; full CSV not incorporated",
+      "labels": "imposed fault conditions and phases require time/severity mapping; never label the whole file by filename",
+      "limitations": [
+        "not used in frozen model",
+        "large CSV not downloaded",
+        "invalid sensor sentinels and repeated display timestamps need treatment"
+      ]
+    }
+  ]
+}

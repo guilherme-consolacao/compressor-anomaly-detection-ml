@@ -1,0 +1,142 @@
+{
+  "aggregate": {
+    "accuracy": 0.9195804195804196,
+    "average_precision": 0.7075581597403229,
+    "balanced_accuracy": 0.8846153846153846,
+    "f1": 0.4888888888888889,
+    "false_positive_rate": 0.07692307692307693,
+    "fn": 2,
+    "fp": 21,
+    "n": 286,
+    "normal_groups": 3,
+    "positive_groups": 2,
+    "precision": 0.34375,
+    "recall": 0.8461538461538461,
+    "tn": 252,
+    "tp": 11
+  },
+  "by_source": {
+    "smart_pdm": {
+      "accuracy": 0.9225352112676056,
+      "average_precision": 0.7032925407925408,
+      "balanced_accuracy": 0.916083916083916,
+      "f1": 0.47619047619047616,
+      "false_positive_rate": 0.07692307692307693,
+      "fn": 1,
+      "fp": 21,
+      "n": 284,
+      "normal_groups": 3,
+      "positive_groups": 1,
+      "precision": 0.3225806451612903,
+      "recall": 0.9090909090909091,
+      "tn": 252,
+      "tp": 10
+    },
+    "tri_hp_faults": {
+      "accuracy": 0.5,
+      "average_precision": null,
+      "balanced_accuracy": null,
+      "f1": 0.6666666666666666,
+      "false_positive_rate": null,
+      "fn": 1,
+      "fp": 0,
+      "n": 2,
+      "normal_groups": 0,
+      "positive_groups": 1,
+      "precision": 1.0,
+      "recall": 0.5,
+      "tn": 0,
+      "tp": 1
+    }
+  },
+  "claim": "after-cycle maintenance reference; no universal compressor failure claim",
+  "context_rejections": 9,
+  "external_data_read": false,
+  "external_release_decision": "not_released; no local campaign or boundary confirmation",
+  "frozen_candidate": "cycle-freeze-8af6bb44817d037a836c",
+  "group_uncertainty": {
+    "intervals": {
+      "balanced_accuracy": [
+        0.7454128440366973,
+        0.9257496430271299
+      ],
+      "false_positive_rate": [
+        0.0,
+        0.20833333333333334
+      ],
+      "recall": [
+        0.5,
+        0.9090909090909091
+      ]
+    },
+    "method": "2000 complete-group bootstrap samples; few groups, descriptive uncertainty only",
+    "valid_samples_with_both_classes": 1860
+  },
+  "local_portability_status": "pending real completed-cycle boundaries; raw temperature/instantaneous-vibration packets cannot meet this contract",
+  "public_integration_decision": "prototype_discrimination_pass",
+  "public_probability_support": "limited; sparse independent positive groups",
+  "rejected_positive_cases": 0,
+  "reserved_smart_input": 293,
+  "reserved_test_consumed": true,
+  "reserved_tri_conditions": 2,
+  "run_id": "cycle-test-9446332f4eb72f0bb4de",
+  "smart_eligible": 284,
+  "smart_probability": {
+    "brier": 0.028080033577556694,
+    "constant_training_prior": 0.016624040920716114,
+    "log_loss": 0.09675702513067208,
+    "prior_brier": 0.03772097528492888,
+    "prior_log_loss": 0.17479742502729095,
+    "reliability": [
+      {
+        "left": 0,
+        "mean_probability": 0.0069989424845712835,
+        "n": 208,
+        "positive_cases": 1,
+        "right": 0.01
+      },
+      {
+        "left": 0.01,
+        "mean_probability": 0.01598259650382052,
+        "n": 34,
+        "positive_cases": 0,
+        "right": 0.02
+      },
+      {
+        "left": 0.02,
+        "mean_probability": 0.0239223446637789,
+        "n": 11,
+        "positive_cases": 0,
+        "right": 0.05
+      },
+      {
+        "left": 0.05,
+        "mean_probability": 0.07967321589190456,
+        "n": 11,
+        "positive_cases": 1,
+        "right": 0.1
+      },
+      {
+        "left": 0.1,
+        "mean_probability": 0.13001064364964895,
+        "n": 16,
+        "positive_cases": 5,
+        "right": 0.25
+      },
+      {
+        "left": 0.25,
+        "mean_probability": 0.26195865989915385,
+        "n": 4,
+        "positive_cases": 4,
+        "right": 0.5
+      },
+      {
+        "left": 0.5,
+        "mean_probability": null,
+        "n": 0,
+        "positive_cases": 0,
+        "right": 1
+      }
+    ]
+  }
+}

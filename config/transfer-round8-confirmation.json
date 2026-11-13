@@ -1,0 +1,27 @@
+{
+  "round_name": "temporal-round8",
+  "parent_run": "temporal-round7-c2f700026e1cc1c77edd",
+  "external_data_allowed": false,
+  "public_test_opened": false,
+  "primary_feature": "duration_relative_history",
+  "cycle_context": {"history_size": 10, "minimum_history": 3, "maximum_gap_hours": 12},
+  "candidate_variants": [
+    {"id": "anchor_leaf3", "sources": [], "leaf": 3},
+    {"id": "anchor_leaf10", "sources": [], "leaf": 10},
+    {"id": "smart_tri", "sources": ["tri_hp_faults"], "leaf": 10},
+    {"id": "smart_nist_tri", "sources": ["nist_hvac", "tri_hp_faults"], "leaf": 10}
+  ],
+  "classifier": {"n_estimators": 200, "max_depth": 5, "seed": 2026, "auxiliary_mass": 1.0},
+  "normality_crossfit": "held development bucket; inner calibration fits with one bucket use complete held week groups",
+  "calibration": "LogisticRegression C=1 on raw reference scores from inner held buckets, natural SMART class prevalence, no local data",
+  "threshold": "fixed 0.5 and training-only maximum recall subject to FPR<=0.10; ties balanced accuracy then largest threshold",
+  "permutation_seeds": [2026, 2027, 2028],
+  "permutation_policy": "shuffle auxiliary labels within original source, preserve counts; diagnostic controls, not eligible final candidates",
+  "selection": "real multibase variants only; unchanged prototype gates on nested held-group results; choose raw or sigmoid by lower Brier, then log loss; ties choose fewer sources. Freeze one candidate before reserved evaluation. No configuration chosen from final test.",
+  "probability_scope": "probability of provider reference class in SMART cohort only; sparse positive groups preclude a universal physical-failure probability",
+  "source_contribution": "compare matching anchor leaf, fair training-only threshold and shuffled auxiliary references; improvement at a fixed threshold alone does not establish transferred physical information",
+  "final_acceptance_change": false,
+  "local_input_change": "completed real operating cycles and previous confirmed cycles are required; sensor POST alone does not provide boundaries",
+  "reserved_sources": ["SMART original 293 cycles", "TRI OC day"],
+  "test_policy": "one frozen pipeline; all test scores recorded once; failed test becomes consumed evidence, never threshold tuning"
+}

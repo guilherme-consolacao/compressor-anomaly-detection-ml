@@ -1,0 +1,80 @@
+{
+  "parent_protocol": "transfer-protocol-2b941b65972c76bd9371",
+  "external_data_allowed": false,
+  "public_test_opened": false,
+  "nist_split": {
+    "train": "all reference rows with Rated_SEER=14",
+    "validation": "all reference rows with Rated_SEER=16",
+    "indeterminate": "excluded from reference fitting and metrics",
+    "group": "entire equipment stratum and original files; no row-wise validation"
+  },
+  "tri_hp_split": {
+    "train": "10 kW days except OC",
+    "validation": "12 kW days except OC",
+    "test": "OC entire 2021-01-13 day sealed as unseen-fault-type test"
+  },
+  "shared_thermal_features": [
+    "evaporating_c",
+    "condensing_c",
+    "discharge_c",
+    "liquid_line_c",
+    "mass_flow_gs",
+    "temperature_lift_c",
+    "discharge_above_condensing_c",
+    "subcooling_c"
+  ],
+  "shared_feature_exclusions": [
+    "NIST outdoor-unit power is not compressor-only",
+    "electrical drive frequency is not automatically mechanical rps",
+    "NIST COP is cooling/total power; not equated to heating/compressor COP"
+  ],
+  "bridge_models": [
+    "standardized ridge alpha10",
+    "RF regressor 200 depth5 leaf3 seed2026"
+  ],
+  "bridge_predictors": [
+    "evaporating_c",
+    "condensing_c",
+    "discharge_c",
+    "liquid_line_c",
+    "power_kw",
+    "mass_flow_gs"
+  ],
+  "bridge_targets": [
+    "vibration_spectral_centroid_relative",
+    "vibration_spectral_entropy",
+    "vibration_band_fraction_10_100",
+    "compressor_rms_spatial"
+  ],
+  "bridge_control": [
+    "f_comp_set_Hz",
+    "water_supply_temperature_setpoint_C",
+    "water_return_temperature_setpoint_C",
+    "ambient_temperature_setpoint_C"
+  ],
+  "thermal_classifiers": {
+    "n_estimators": 200,
+    "max_depth": [
+      5,
+      null
+    ],
+    "min_samples_leaf": [
+      3,
+      10
+    ],
+    "class_weight": "balanced",
+    "seed": 2026,
+    "ablation": [
+      "NIST 14 only",
+      "TRI 10 only",
+      "combined NIST 14 + TRI 10"
+    ],
+    "weighting": "equal source mass, then equal original experiment-file/test-code mass within source; classification class weighting retained"
+  },
+  "projected_bridge": {
+    "status": "experimental derived features, never measured waveform",
+    "adjustment": "public RWTH train/known-development only",
+    "extrapolation": "flag each predictor outside training range; report coverage, no confident inferred labels",
+    "label_transfer": "none unless independent evidence supports it"
+  }
+}

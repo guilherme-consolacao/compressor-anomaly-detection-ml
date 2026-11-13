@@ -1,0 +1,59 @@
+{
+  "protocol_run_id": "transfer-protocol-2b941b65972c76bd9371",
+  "analysis_round": "2a",
+  "external_data_allowed": false,
+  "public_test_opened": false,
+  "anchor_fixed_folds": {
+    "2022-09": 0,
+    "2022-10": 0,
+    "2022-13": 0,
+    "2022-11": 1,
+    "2022-14": 1,
+    "2022-23": 1,
+    "2022-16": 2,
+    "2022-26": 2,
+    "2022-36": 2
+  },
+  "fold_selection": "metadata/group-support only; all prior validation is known development",
+  "hypotheses": [
+    "H01",
+    "H02",
+    "H03",
+    "H04",
+    "H05",
+    "H07"
+  ],
+  "tri_hp_split_policy": {
+    "train": "10 kW sessions except OC day",
+    "validation": "12 kW sessions except OC day",
+    "test": "2021-01-13 shared OC10/OC12 day remains sealed",
+    "grouping": "entire measurement day, no row-wise split",
+    "fault_intensity_and_test_code_as_predictors": false
+  },
+  "rwth_psd": {
+    "channels": [
+      "comp_down_tri_x",
+      "comp_down_tri_y",
+      "comp_down_tri_z"
+    ],
+    "band_hz": [
+      10,
+      1000
+    ],
+    "entropy_fixed_bins": 64,
+    "mapping": "manifest sensor_raw_channel; exact measurement_id and charge join"
+  },
+  "bridges": {
+    "evaluation": "leave one complete measurement session out, no local data",
+    "baselines": [
+      "mean",
+      "operating-regime predictors"
+    ],
+    "models": [
+      "standardized ridge alpha=10",
+      "RandomForestRegressor 200 trees max_depth5 leaf3 seed2026"
+    ],
+    "scope": "paired numerical relation, not binary label proof"
+  },
+  "candidate_smart_wave_sampling": "all development positives plus deterministic 30 normal examples per metadata dependency group; sample is exploratory and prevalence is not deployment prevalence"
+}

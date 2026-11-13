@@ -1,0 +1,71 @@
+{
+  "round_name": "round6-normality-reference",
+  "parent_protocol": "transfer-protocol-2b941b65972c76bd9371",
+  "external_data_allowed": false,
+  "public_test_opened": false,
+  "hypothesis": "Public reference sources can share statistical deviation descriptors without claiming paired temperature/vibration measurements. A supervised Random Forest learns whether those deviations coincide with genuine reference faults, evaluated on held SMART weeks.",
+  "primary_anchor": "smart_pdm",
+  "anchor_families": [
+    "published vibration 25",
+    "dimensionless published vibration shape 6"
+  ],
+  "normality_stage": {
+    "model": "IsolationForest",
+    "n_estimators": 200,
+    "max_samples": 256,
+    "seed": 2026,
+    "scaler": "RobustScaler fitted on public reference normals only",
+    "descriptors": [
+      "mean_tail_rarity",
+      "maximum_tail_rarity",
+      "rare_feature_fraction",
+      "isolation_percentile"
+    ],
+    "scope": "empirical normality ranks, not physical-failure probabilities or formal coverage guarantees",
+    "crossfit": "all Random Forest training descriptors are produced without fitting their complete reference group"
+  },
+  "smart_groups": "fixed 3 outer week-block folds; remaining 2 buckets form inner cross-fitting; 293 final cycles sealed",
+  "nist_auxiliary": "all previously known 14/16 SEER development references; normality held out by whole equipment stratum; aggregate descriptors by label-consistent original experiment file",
+  "tri_auxiliary": "all previously known non-OC 10/12 kW references; normality held out by whole load/session collection; aggregate by test code; OC day remains sealed",
+  "auxiliary_features": [
+    "evaporating_c",
+    "condensing_c",
+    "discharge_c",
+    "liquid_line_c",
+    "mass_flow_gs",
+    "temperature_lift_c",
+    "discharge_above_condensing_c",
+    "subcooling_c"
+  ],
+  "auxiliary_source_mass": [
+    0.1,
+    1.0
+  ],
+  "classifier": {
+    "n_estimators": 200,
+    "max_depth": [
+      5,
+      null
+    ],
+    "min_samples_leaf": [
+      3,
+      10
+    ],
+    "seed": 2026,
+    "threshold": 0.5,
+    "class_mass": "equal per source/class; source indicators never predictors"
+  },
+  "comparison_sources": [
+    "anchor only",
+    "anchor + NIST",
+    "anchor + TRI",
+    "anchor + NIST + TRI"
+  ],
+  "limitations": [
+    "statistical analogy does not identify physical cross-source correlation",
+    "feature count and normal operating support can affect descriptor distributions",
+    "auxiliary original validation has become known development",
+    "no derived physical fault labels"
+  ],
+  "final_acceptance_change": false
+}

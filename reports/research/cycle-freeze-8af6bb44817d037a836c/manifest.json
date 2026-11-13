@@ -1,0 +1,34 @@
+{
+  "artifact_path": "models/cycle-freeze-8af6bb44817d037a836c.joblib",
+  "artifact_sha256": "5a44da31f348a5a28b359f321d7c57e734963c112984762186c4a8ae30ca141f",
+  "auxiliary_training_cases": 329,
+  "contract_version": "cycle-context-normality-v1",
+  "dataset_version": "cycle-reference-8af6bb44817d037a836c",
+  "external_data_read": false,
+  "feature_contract_version": "cycle-context-normality-v1-8af6bb44817d",
+  "feature_names": [
+    "mean_tail_rarity",
+    "maximum_tail_rarity",
+    "rare_feature_fraction",
+    "isolation_percentile"
+  ],
+  "local_portability_status": "pending real completed-cycle boundaries; raw temperature/instantaneous-vibration packets cannot meet this contract",
+  "probability_support": "limited, nested calibrator training had as few as two positive cases; output is a cohort-reference estimate, not a validated defect probability",
+  "public_test_used_at_freeze": false,
+  "run_id": "cycle-freeze-8af6bb44817d037a836c",
+  "scope": "after-cycle operational maintenance reference; no compressor-component diagnosis or remaining-life forecast",
+  "smart_training_cases": 782,
+  "source_counts": {
+    "nist_hvac": 294,
+    "smart_pdm": 782,
+    "tri_hp_faults": 35
+  },
+  "status": "frozen_public_research_candidate",
+  "threshold": 0.5,
+  "training_inputs": {
+    "byte_size": 128694,
+    "content_sha256": "811057f3b9be6246f4d6c36183cebcface3d2b9a37c383e2a176220142919401",
+    "relative_path": "reports/research/cycle-freeze-8af6bb44817d037a836c/training-inputs.csv"
+  },
+  "version": "cycle-freeze-8af6bb44817d037a836c"
+}

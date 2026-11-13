@@ -1,0 +1,59 @@
+{
+  "protocol_version": "public-transfer-v2",
+  "sdd_version": "1.3.0",
+  "seed": 2026,
+  "primary_anchor": "smart_pdm",
+  "focal_domain": "refrigeration, with refrigerator compressor as intended external application",
+  "parent_dataset_version": "public-study-87d04baa2e265aeb",
+  "parent_partitions_sha256": "8a5cb9210d9760ae9999964b10a17e6ca21a615786121b5d3a7d942b70f5c67f",
+  "external_data_allowed": false,
+  "public_test_access": "sealed until candidate decisions are frozen; no feature fitting, alignment, pseudo-label generation, calibration or threshold tuning on test",
+  "prior_validation_status": "known development evidence, never reported as a new independent test",
+  "new_source_evidence": "license, identity, measured versus simulated origin and independent label meaning verified before use",
+  "development_roles": {
+    "parent_train": "grouped model/bridge fitting and nested selection",
+    "parent_validation": "known-domain diagnostic and exploratory comparison; previously inspected",
+    "parent_test": "sealed final public evaluation",
+    "new_sources": "reserve groups and independent references before learned exploration",
+    "calibration": "group-held-out public reference predictions; never pseudo-label agreement",
+    "transductive": "only a predeclared public unlabeled adaptation subset; never local readings"
+  },
+  "hypotheses": [
+    {"id": "H01", "priority": 1, "question": "Which vibration and electrical feature families distinguish SMART reference states across public development groups?", "sources": ["smart_pdm"], "role": "diagnostic anchor, not a source-only final substitute"},
+    {"id": "H02", "priority": 1, "question": "Do band-aware spectral and temporal representations improve shared mechanical signatures beyond three shape moments?", "sources": ["smart_pdm", "kaist", "rwth_r290"], "role": "representation and auxiliary mechanical control"},
+    {"id": "H03", "priority": 1, "question": "Can actual electrical/operating variables link SMART to labelled refrigeration fault experiments?", "sources": ["smart_pdm", "rwth_r290", "tri_hp_faults"], "role": "candidate cross-source anchor, verify variables first"},
+    {"id": "H04", "priority": 1, "question": "Can genuine paired RWTH modalities predict or reconstruct a thermal/vibration relation beyond operating-regime baselines?", "sources": ["rwth_r290"], "role": "measured public bridge, no arbitrary binary labels"},
+    {"id": "H05", "priority": 1, "question": "Can references from public refrigeration fault experiments independently evaluate a transferred relation or add compatible labelled examples?", "sources": ["tri_hp_faults", "smart_pdm"], "role": "independent target-reference investigation"},
+    {"id": "H06", "priority": 2, "question": "Can ULT thermal dynamics and uncertain service-event timing support episode-level linkage without inventing minute-level truth?", "sources": ["ult_freezers", "rwth_r290"], "role": "thermal bridge and uncertain event reference"},
+    {"id": "H07", "priority": 1, "question": "Which additional measured refrigeration datasets close a missing shared variable or independent fault reference?", "sources": [], "role": "targeted search after an identified gap, renewable by cycle"},
+    {"id": "H08", "priority": 2, "question": "Which candidate summaries remain useful under public-only sampling and bandwidth stress tests compatible with sparse acquisition hypotheses?", "sources": ["smart_pdm", "kaist"], "role": "application representation research; no local-value fitting"}
+  ],
+  "comparisons": ["SMART reference baseline", "combined references without alignment", "shared representations", "measured bridge", "aligned representation", "reference plus independently admissible derived labels", "source/bridge/feature-family ablation", "constant-prior and majority-normal baselines"],
+  "label_policy": {
+    "preserve_reference": true,
+    "never_infer_normal_from_missing_event": true,
+    "transfer_acceptance": "independent target reference or documented physically justified evidence; uncertain cases abstain",
+    "soft_labels": "retain as evidence; explicit hard-label/weight policy before RandomForestClassifier fitting",
+    "scope": "provider reference state unless compressor-specific fault evidence is available"
+  },
+  "initial_model_space": {"classifier": "RandomForestClassifier", "n_estimators": [200], "max_depth": [5, null], "min_samples_leaf": [3, 10], "class_weight": ["balanced"], "selection": "grouped public development only; changes require a new protocol revision"},
+  "probability_policy": {"raw_score": "uncalibrated class score", "calibrated_score": "estimated provider-reference probability, with calibration/domain support status", "methods_to_compare": ["uncalibrated", "sigmoid from held-out-group public reference scores"], "physical_failure_probability": "not claimed without corresponding target and independent validation", "outlier_score": "not a fault probability"},
+  "prototype_public_acceptance": {
+    "minimum_measured_contributing_sources": 2,
+    "anchor_and_refrigeration_reference_required": true,
+    "auxiliary_kaist_alone_does_not_complete_focal_domain": true,
+    "minimum_reference_positives_for_aggregate_claim": 10,
+    "minimum_positive_dependency_groups": 2,
+    "minimum_normal_dependency_groups": 2,
+    "balanced_accuracy": 0.7,
+    "recall_anomaly": 0.7,
+    "maximum_false_positive_rate": 0.1,
+    "average_precision": "above the constant-prevalence baseline; report class support and group uncertainty",
+    "probability_quality": "compare Brier/log loss to constant prior and reliability by support; insufficient calibration support stays explicit",
+    "rationale": "research prototype targets above balanced chance, useful detection and bounded false alerts; no 100 percent accuracy requirement or safety/reliability claim",
+    "insufficient_support_result": "inconclusive, continue source/hypothesis work rather than force a success or a general impossibility claim"
+  },
+  "release_decisions": ["public_integration_decision", "public_probability_support", "local_portability_status", "external_release_decision"],
+  "continuation": "failed path creates the next hypothesis/source search; preserve all results and sealed references; do not fabricate data, correlation or labels to finish",
+  "initial_acquisition_budgets": {"metadata_bytes_per_request": 2000000, "processed_member_bytes": 100000000, "selected_raw_member_bytes": 160000000, "maximum_round_bytes": 600000000, "larger_input": "document necessity and increase the next acquisition plan explicitly"}
+}

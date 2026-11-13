@@ -1,0 +1,52 @@
+{
+  "protocol_version": "public-study-v1",
+  "seed": 2026,
+  "allowed_sources": ["smart_pdm", "kaist", "rwth_r290", "ult_freezers"],
+  "smart_group": "connected ISO UTC weeks; cycles crossing a week join both weeks",
+  "smart_partitions": "first seeded group split with both classes and at least one positive group in each role; no model scores used",
+  "smart_min_positive_groups_per_partition": 1,
+  "smart_min_training_positive_groups": 2,
+  "smart_min_training_positive_examples": 5,
+  "smart_group_support_limit": "only four positive connected week blocks; a two-positive-group minimum per role was infeasible before any model experiment",
+  "kaist_partitions": {"2Nm": "train", "4Nm": "validation"},
+  "kaist_limit": "two sampled loads; no independent third test load or equipment",
+  "other_partitions": "sorted dependency groups, every third group validation; remainder train; no binary test reference",
+  "candidate_features": ["skewness", "kurtosis", "range_over_std"],
+  "candidate_representation": "single-channel temporal vibration shape; positive-scale/offset invariant, not bandwidth or machine invariant",
+  "kaist_window_seconds": 5,
+  "smart_features": "provider cycle aggregates; duration differs from KAIST windows",
+  "model_comparison": {
+    "purpose": "fixed feasibility experiment, not the final artifact or external validation",
+    "n_estimators": 150,
+    "max_depth": 5,
+    "min_samples_leaf": 3,
+    "class_weight": "balanced",
+    "threshold": 0.5,
+    "comparisons": ["SMART only", "KAIST only", "SMART plus KAIST references", "majority-normal baseline"],
+    "weights": "each source equal total weight, then inverse recording/day-group size within source"
+  },
+  "public_test_access": "SMART test stays sealed for T17; feasibility uses only train and validation. KAIST has no reserved test load in this subset.",
+  "unsupervised": {
+    "scope": "train only; descriptive, never overwrites a reference label",
+    "scaling": "RobustScaler fitted separately within each source on train only",
+    "kmeans_clusters": [2, 3, 4],
+    "kmeans_n_init": 10,
+    "isolation_forest_contamination": [0.01, 0.05, 0.1],
+    "stability": "leave one dependency group out; adjusted Rand score on shared observations"
+  },
+  "transfer_policy": "No pseudo-label accepted without an independent target reference; unresolved stays indeterminate.",
+  "prototype_public_minima": {
+    "balanced_accuracy_each_reference_source": 0.7,
+    "recall_anomaly_each_reference_source": 0.7,
+    "precision_anomaly_each_reference_source": 0.5,
+    "rationale": "provisional PI feasibility bar, above balanced chance and majority-normal; not a reliability or safety claim"
+  },
+  "release_gate": [
+    "at least two public measured sources contribute defensible labels",
+    "shared feature semantics and target relation supported, not merely numerical scale",
+    "group validation reports support and source bias; untested hypotheses remain conditional",
+    "all final inputs computable with documented acquisition support",
+    "independent external protocol and true condition required before local accuracy claim"
+  ],
+  "external_data_allowed": false
+}
